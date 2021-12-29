@@ -26,6 +26,9 @@ export default function Home() {
         <main>
           <Randomizer/>
         </main>
+        <footer>
+          
+        </footer>
     </div>
   )
 }
