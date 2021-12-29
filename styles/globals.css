@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Oetztype";
+  src: 
+  url("/fonts/Oetztype/Oetztype.woff2") format("woff2"), /* chrome、firefox */
+  url("/fonts/Oetztype/Oetztype.woff") format("woff"), /* chrome、firefox */
+  url("/fonts/Oetztype/Oetztype.ttf") format("truetype"),
+  url("/fonts/Oetztype/Oetztype.svg#Oetztype") format("svg"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+header{
+  overflow: hidden;
+}
+.hidden{
+  font-size: 80px;
+  
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+.app{
+  text-align: center;
+  font-family: "Oetztype";
+  background-color: rgb(79, 146, 235);
+}
+.randomizeButton{
+  font-family: "Oetztype";
+  display: block;
+  margin: auto;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
