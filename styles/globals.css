@@ -25,6 +25,10 @@ header{
   font-family: "Oetztype";
   display: block;
   margin: auto;
+  background-color: rgb(254, 198, 0);
+  border: 2px;
+  border-color: rgb(154, 74, 38);
+  box-shadow: 10px;
 }
 body{
   margin: 0;

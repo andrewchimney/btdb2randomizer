@@ -21,13 +21,13 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest"/>
       </Head>
         <header>
-          <h1>Bloons Tower Defense Battles 2 Randomizer</h1>
+          <h1>Bloons Tower Defe nse Battles 2 Randomizer</h1>
         </header>
         <main>
           <Randomizer/>
         </main>
         <footer>
-          
+
         </footer>
     </div>
   )
