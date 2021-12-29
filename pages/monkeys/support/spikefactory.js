@@ -10,9 +10,10 @@ class spikefactory extends React.Component{
     render(){
         return(
             <div className="monkey">
-                <h1></h1>
-                <p></p>
-                <p>Cost to unlock:  monkey money</p> 
+                <h1>Spike Factory</h1>
+                <p>The Spike Factory is a support class tower in BTDB2. The spike factory creates piles of spikes that pop bloons</p>
+                <p>Cost to unlock: 250 monkey money</p> 
+                <Image src="/images/monkeys/SpikeFactory.webp" alt='Spike Factory' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
 
             </div>
         )

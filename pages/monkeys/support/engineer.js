@@ -10,9 +10,10 @@ class engineer extends React.Component{
     render(){
         return(
             <div className="monkey">
-                <h1></h1>
-                <p></p>
-                <p>Cost to unlock:  monkey money</p> 
+                <h1>Engineer Monkey</h1>
+                <p>The Engineer Monkey is a support tower in BTDB2. The Engineer creates sentries that shoot bloons with him.</p>
+                <p>Cost to unlock: 250 monkey money</p> 
+                <Image src="/images/monkeys/Engineer.webp" alt='Monkey Engineer' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
 
             </div>
         )

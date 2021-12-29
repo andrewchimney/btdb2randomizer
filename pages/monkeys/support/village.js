@@ -10,9 +10,10 @@ class village extends React.Component{
     render(){
         return(
             <div className="monkey">
-                <h1></h1>
-                <p></p>
-                <p>Cost to unlock:  monkey money</p> 
+                <h1>Village</h1>
+                <p>The village is a support tower in BTDB2. The village buffs all towers inside of it&apos;s radius.</p>
+                <p>Cost to unlock: 250 monkey money</p> 
+                <Image src="/images/monkeys/Village.webp" alt='Village' width={this.state.imageSize} height={this.state.imageSize} priority={true}/>
 
             </div>
         )

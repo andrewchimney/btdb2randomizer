@@ -126,8 +126,21 @@ class NavBar extends React.Component{
                                 </Link>
                             </Dropdown.Item>
                             <Dropdown.Item>
-
+                                <Link href="/monkeys/support/engineer">
+                                    <a>Engineer</a>
+                                </Link>
                             </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/support/spikefactory">
+                                    <a>Spike Factory</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/support/village">
+                                    <a>Village</a>
+                                </Link>
+                            </Dropdown.Item>
+                            
                         </DropdownButton>
                     </li>
                     
