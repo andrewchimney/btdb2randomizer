@@ -101,13 +101,13 @@ class Randomizer extends React.Component{
             case 0:
                 return <span className='hidden'>?</span>;
             case 1:
-                return <Image src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={"100"} height={"100"}/> ;
+                return <Image src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={"100"} height={"100"} priority={true} /> ;
             case 2: 
-                return <Image src='/images/heroes/GwendolinPortrait.webp' alt='Gwendolin' width={"100"} height={"100"}/>;
+                return <Image src='/images/heroes/GwendolinPortrait.webp' alt='Gwendolin' width={"100"} height={"100"} priority={true}/>;
             case 3: 
-                return <Image src='/images/heroes/ObynGreenFootPortrait.webp' alt='Obyn' width={"100"} height={"100"}/>;
+                return <Image src='/images/heroes/ObynGreenFootPortrait.webp' alt='Obyn' width={"100"} height={"100"} priority={true}/>;
             case 4: 
-                return <Image src='/images/heroes/StrikerJonesPortrait.webp' alt='Striker Jones' width={"100"} height={"100"}/>;
+                return <Image src='/images/heroes/StrikerJonesPortrait.webp' alt='Striker Jones' width={"100"} height={"100"} priority={true}/>;
             default:
                 return <p>default case returned(error)</p>
         }
