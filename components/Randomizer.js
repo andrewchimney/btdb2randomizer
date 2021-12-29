@@ -103,13 +103,13 @@ class Randomizer extends React.Component{
             case 0:
                 return <span className='hidden'>?</span>;
             case 1:
-                return <Image src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={"100"} height={"100"} priority={true} /> ;
+                return <Link href="/heroes/quincy"><a><Image src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={"100"} height={"100"} priority={true} /> </a></Link>;
             case 2: 
-                return <Image src='/images/heroes/GwendolinPortrait.webp' alt='Gwendolin' width={"100"} height={"100"} priority={true}/>;
+                return <Link href="/heroes/gwendolin"><a><Image src='/images/heroes/GwendolinPortrait.webp' alt='Gwendolin' width={"100"} height={"100"} priority={true}/></a></Link>;
             case 3: 
-                return <Image src='/images/heroes/ObynGreenFootPortrait.webp' alt='Obyn' width={"100"} height={"100"} priority={true}/>;
+                return <Link href="/heroes/obyn"><a><Image src='/images/heroes/ObynGreenFootPortrait.webp' alt='Obyn' width={"100"} height={"100"} priority={true}/></a></Link>;
             case 4: 
-                return <Image src='/images/heroes/StrikerJonesPortrait.webp' alt='Striker Jones' width={"100"} height={"100"} priority={true} />;
+                return <Link href="/heroes/strikerjones"><a><Image src='/images/heroes/StrikerJonesPortrait.webp' alt='Striker Jones' width={"100"} height={"100"} priority={true} /></a></Link>;
             default:
                 return <p>default case returned(error)</p>
         }

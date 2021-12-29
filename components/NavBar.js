@@ -13,6 +13,30 @@ class NavBar extends React.Component{
                         </Link>
                     </li>
                     <li>
+                        <DropdownButton id="dropdown-basic-button" title="heroes" className="categoryButton">
+                            <Dropdown.Item>
+                                <Link href="/heroes/quincy">
+                                    <a>Quincy</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/heroes/gwendolin">
+                                    <a>Gwen</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/heroes/obyn">
+                                    <a>Obyn</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/heroes/strikerjones">
+                                    <a>Striker</a>
+                                </Link>
+                            </Dropdown.Item>
+                        </DropdownButton>
+                    </li>
+                    <li>
                         <DropdownButton id="dropdown-basic-button" title="Primary" className="categoryButton">
                             <Dropdown.Item>
                                 <Link href="/monkeys/primary/dart">
