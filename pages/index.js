@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import NavBar from '../components/NavBar'
 import Randomizer from '../components/Randomizer'
 
 export default function Home() {
@@ -20,8 +21,11 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
         <link rel="manifest" href="/site.webmanifest"/>
       </Head>
+      <nav>
+        <NavBar/>
+      </nav>
         <header>
-          <h1>Bloons Tower Defe nse Battles 2 Randomizer</h1>
+          <h1>Bloons Tower Defense Battles 2 Randomizer</h1>
         </header>
         <main>
           <Randomizer/>
