@@ -30,6 +30,10 @@ header{
   border-color: rgb(154, 74, 38);
   box-shadow: 10px;
 }
+.link{
+  display: inline;
+  list-style-type: none;
+}
 body{
   margin: 0;
   padding: 0;
