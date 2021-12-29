@@ -28,11 +28,38 @@ class NavBar extends React.Component{
                         <DropdownButton id="dropdown-basic-button" title="Military" className="categoryButton">
                             <Dropdown.Item>
                                 <Link href="/monkeys/military/ace">
-                                    <a>Monkey Ace</a>
+                                    <a>Ace</a>
                                 </Link>
                             </Dropdown.Item>
                             <Dropdown.Item>
-
+                                <Link href="/monkeys/military/buccaneer">
+                                    <a>Buccaneer</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/military/dartlinggunner">
+                                    <a>Dartling Gunner</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/military/helipilot">
+                                    <a>Heli Pilot</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/military/mortar">
+                                    <a>Mortar</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/military/sniper">
+                                    <a>Sniper</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/military/sub">
+                                    <a>Sub</a>
+                                </Link>
                             </Dropdown.Item>
                         </DropdownButton>
                     </li>

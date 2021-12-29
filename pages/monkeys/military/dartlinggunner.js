@@ -10,9 +10,10 @@ class dartlinggunner extends React.Component{
     render(){
         return(
             <div className="monkey">
-                <h1></h1>
-                <p></p>
-                <p>Cost to unlock:  monkey money</p> 
+                <h1>Dartling Gunner</h1>
+                <p>The Dartling Gunner is a military class tower in BDTB2. The Dartling Gunner uses a dart machine guns that shoots at your mouse or wherever you last touched.</p>
+                <p>Cost to unlock: 75 monkey money</p> 
+                <Image src="/images/monkeys/DartlingGunner.webp" alt='Dartling Gunner' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
 
             </div>
         )
