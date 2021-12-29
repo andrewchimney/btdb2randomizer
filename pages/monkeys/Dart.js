@@ -6,3 +6,4 @@ class Dart extends React.Component{
         )
     }
 }
+export default Dart;
