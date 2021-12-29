@@ -23,7 +23,7 @@ export default function Home() {
         <header>
           <h1>Bloons Tower Defense Battles 2 Randomizer</h1>
         </header>
-        <main className={styles.main}>
+        <main>
           <Randomizer/>
         </main>
     </div>
