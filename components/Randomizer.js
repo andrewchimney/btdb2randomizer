@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 class Randomizer extends React.Component{
     constructor(props){
         super(props);
@@ -45,17 +46,18 @@ class Randomizer extends React.Component{
         this.randomizeTower()
     }
     displayTowers(props){
+        //<Link href=""><a></a></Link>
         switch(this.state.towersKey[props.index]){
             case 0:
                 return <span className='hidden'>?</span>
             case 1:
-                return <Image src="/images/monkeys/Ace.webp" alt='Monkey Ace' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/military/ace"><a><Image src="/images/monkeys/Ace.webp" alt='Monkey Ace' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>
             case 2:
-                return <Image src="/images/monkeys/Alchemist.webp" alt='Alchemist mMnkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/magic/achemist"><a><Image src="/images/monkeys/Alchemist.webp" alt='Alchemist mMnkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 3:
-                return <Image src="/images/monkeys/BananaFarm.webp" alt='Banana Farm' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/support/bananafarm"><a><Image src="/images/monkeys/BananaFarm.webp" alt='Banana Farm' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 4:
-                return <Image src="/images/monkeys/BombShooter.webp" alt='Bomb Shooter' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/primary/bombshooter"><a><Image src="/images/monkeys/BombShooter.webp" alt='Bomb Shooter' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 5:
                 return <Image src="/images/monkeys/Boomerang.webp" alt='Boomerang Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
             case 6:
@@ -65,7 +67,7 @@ class Randomizer extends React.Component{
             case 8:
                 return <Image src="/images/monkeys/DartlingGunner.webp" alt='Dartling Gunner' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
             case 9:
-                return <Image src="/images/monkeys/Druid.webp" alt='Druid Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/magic/druid"><a><Image src="/images/monkeys/Druid.webp" alt='Druid Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 10:
                 return <Image src="/images/monkeys/Engineer.webp" alt='Monkey Engineer' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
             case 11:
@@ -77,7 +79,7 @@ class Randomizer extends React.Component{
             case 14:
                 return <Image src="/images/monkeys/Mortar.webp" alt='Mortar' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
             case 15:
-                return <Image src="/images/monkeys/Ninja.webp" alt='Ninja Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/magic/ninja"><a><Image src="/images/monkeys/Ninja.webp" alt='Ninja Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 16:
                 return <Image src="/images/monkeys/Sniper.webp" alt='Sniper Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
             case 17:
@@ -85,13 +87,13 @@ class Randomizer extends React.Component{
             case 18:
                 return <Image src="/images/monkeys/Sub.webp" alt='Submarine Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
             case 19:
-                return <Image src="/images/monkeys/Super.webp" alt='Super Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return  <Link href="monkeys/magic/super"><a><Image src="/images/monkeys/Super.webp" alt='Super Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 20:
                 return <Image src="/images/monkeys/TackShooter.webp" alt='Tackshooter' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
             case 21:
                 return <Image src="/images/monkeys/Village.webp" alt='Village' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
             case 22:
-                return <Image src="/images/monkeys/Wizard.webp" alt='Monkey Apprentice' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/magic/wizard"><a><Image src="/images/monkeys/Wizard.webp" alt='Monkey Apprentice' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             default:
                 return <span>default case returned(error)</span>
         }
