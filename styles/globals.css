@@ -41,6 +41,7 @@ li{
 .NavButton{
   padding-left: .5vw;
   padding-right: .5vw;
+  color: yellow;
 }
 .categoryButton{
   display: inline;
@@ -53,4 +54,9 @@ body{
 }
 .monkey{
   text-align: center;
+}
+a{
+  color: black;
+  text-decoration: none;
+  padding-right: 10px;
 }
