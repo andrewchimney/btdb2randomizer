@@ -59,11 +59,11 @@ class Randomizer extends React.Component{
             case 4:
                 return <Link href="monkeys/primary/bombshooter"><a><Image src="/images/monkeys/BombShooter.webp" alt='Bomb Shooter' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 5:
-                return <Link href=""><a> <Image src="/images/monkeys/Boomerang.webp" alt='Boomerang Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
+                return <Link href="monkeys/primary/boomerang"><a> <Image src="/images/monkeys/Boomerang.webp" alt='Boomerang Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 6:
                 return <Link href="monkeys/military/buccaneer"><a><Image src="/images/monkeys/Buccaneer.webp" alt='Monkey Buccaneer' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 7:
-                return <Image src="/images/monkeys/Dart.webp" alt='Dart Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/primary/dart"><a> <Image src="/images/monkeys/Dart.webp" alt='Dart Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>
             case 8:
                 return <Link href="monkeys/military/dartlinggunner"><a><Image src="/images/monkeys/DartlingGunner.webp" alt='Dartling Gunner' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 9:
@@ -71,11 +71,11 @@ class Randomizer extends React.Component{
             case 10:
                 return <Link href="monkeys/support/engineer"><a><Image src="/images/monkeys/Engineer.webp" alt='Monkey Engineer' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 11:
-                return <Image src="/images/monkeys/GlueGunner.webp" alt='Glue Gunner Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/primary/gluegunner"><a><Image src="/images/monkeys/GlueGunner.webp" alt='Glue Gunner Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>
             case 12:
                 return <Link href="monkeys/military/helipilot"><a><Image src="/images/monkeys/HeliPilot.webp" alt='Heli Pilot' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 13:
-                return <Image src="/images/monkeys/Ice.webp" alt='Ice Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/primary/ice"><a><Image src="/images/monkeys/Ice.webp" alt='Ice Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 14:
                 return  <Link href="monkeys/military/mortar"><a><Image src="/images/monkeys/Mortar.webp" alt='Mortar' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 15:
@@ -89,7 +89,7 @@ class Randomizer extends React.Component{
             case 19:
                 return <Link href="monkeys/magic/super"><a><Image src="/images/monkeys/Super.webp" alt='Super Monkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 20:
-                return <Image src="/images/monkeys/TackShooter.webp" alt='Tackshooter' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> 
+                return <Link href="monkeys/primary/tackshooter"><a><Image src="/images/monkeys/TackShooter.webp" alt='Tackshooter' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>
             case 21:
                 return <Link href="monkeys/support/village"><a><Image src="/images/monkeys/Village.webp" alt='Village' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 22:

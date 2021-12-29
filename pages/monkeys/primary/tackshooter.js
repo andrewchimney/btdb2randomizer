@@ -10,9 +10,10 @@ class tackshooter extends React.Component{
     render(){
         return(
             <div className="monkey">
-                <h1></h1>
-                <p></p>
-                <p>Cost to unlock:  monkey money</p> 
+                <h1>Tackshooter</h1>
+                <p>The Tackshooter is a primary class tower in BTDB2. The tackshooter sprays a volley of tacks around itself.</p>
+                <p>Cost to unlock: unlocked at start</p> 
+                <Image src="/images/monkeys/TackShooter.webp" alt='Tackshooter' width={this.state.imageSize} height={this.state.imageSize} priority={true}/>
 
             </div>
         )

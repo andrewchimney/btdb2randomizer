@@ -10,10 +10,10 @@ class bombshooter extends React.Component{
     render(){
         return(
             <div className="monkey">
-                <h1></h1>
-                <p></p>
-                <p>Cost to unlock:  monkey money</p> 
-
+                <h1>Bomb Shooter</h1>
+                <p>The Bomb Shooter is a primary class tower in BTDB2. The Bomb Shooter lauches bombs that have an aoe affect.</p>
+                <p>Cost to unlock: unlocked at start</p> 
+                <Image src="/images/monkeys/BombShooter.webp" alt='Bomb Shooter' width={this.state.imageSize} height={this.state.imageSize} priority={true}/>
             </div>
         )
     }

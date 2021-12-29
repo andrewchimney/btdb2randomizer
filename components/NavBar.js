@@ -44,8 +44,31 @@ class NavBar extends React.Component{
                                 </Link>
                             </Dropdown.Item>
                             <Dropdown.Item>
-
+                                <Link href="/monkeys/primary/bombshooter">
+                                    <a>Bomb Shooter</a>
+                                </Link>
                             </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/primary/boomerang">
+                                    <a>Boomerang Monkey</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/primary/gluegunner">
+                                    <a>Gluegunner</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/primary/ice">
+                                    <a>Ice Monkey</a>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Link href="/monkeys/primary/tackshooter">
+                                    <a>Tackshooter</a>
+                                </Link>
+                            </Dropdown.Item>
+
                         </DropdownButton>
                     </li>
                     <li>
