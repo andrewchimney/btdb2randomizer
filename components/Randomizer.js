@@ -9,12 +9,13 @@ class Randomizer extends React.Component{
             towersKey: [0,0,0,0],
             imageSize: 100
         };
-
         this.randomizeHero = this.randomizeHero.bind(this);
         this.DisplayHero = this.DisplayHero.bind(this);
         this.randomizeTower = this.randomizeTower.bind(this);
         this.displayTowers = this.displayTowers.bind(this);
-        this.randomizeLoadout = this.randomizeLoadout.bind(this);
+        this.rouletteLoadout = this.rouletteLoadout.bind(this);
+        this.rouletteHero = this.rouletteHero.bind(this);
+        this.rouletteTower = this.rouletteTower.bind(this);
     }
     generateTowers(){
         return [Math.floor(Math.random()*22+1), Math.floor(Math.random()*22+1) , Math.floor(Math.random()*22+1)  , Math.floor(Math.random()*22+1)];
@@ -28,28 +29,40 @@ class Randomizer extends React.Component{
         return (s.size===arr.length)
     }
     randomizeHero(){
-        console.log("Hero randomizing");
         let hero = (Math.floor(Math.random()*4))+1;
+        while(this.state.heroKey===hero){
+            hero = (Math.floor(Math.random()*4))+1;
+        }
         this.setState({heroKey: hero});
 
     }
     randomizeTower(){
-        console.log("Tower randomizing");
         let towers = this.generateTowers();
         while(!this.checkUnique(towers)){
             towers = this.generateTowers();
         }
         this.setState({towersKey: towers});
     }
-    randomizeLoadout(){
+    rouletteLoadout(){
+        this.rouletteHero();
+        this.rouletteTower();
+    }
+    rouletteHero(){
         this.randomizeHero();
-        this.randomizeTower()
+        let timer = setInterval(this.randomizeHero, 150);
+        setTimeout(function(){clearInterval(timer);}, 2000);
+       
+    }
+    rouletteTower(){
+        this.randomizeTower();
+        let timer = setInterval(this.randomizeTower, 150);
+        setTimeout(function(){clearInterval(timer);}, 2000);
     }
     displayTowers(props){
         //<Link href=""><a></a></Link>
         switch(this.state.towersKey[props.index]){
             case 0:
-                return <span className='hidden'>?</span>
+                return <Image src="/images/hidden/monkeys/DartHidden.png" alt="hidden Dart Monkey" width={this.state.imageSize} height={this.state.imageSize}/>
             case 1:
                 return <Link href="monkeys/military/ace"><a><Image src="/images/monkeys/Ace.webp" alt='Monkey Ace' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>
             case 2:
@@ -101,7 +114,7 @@ class Randomizer extends React.Component{
     DisplayHero(){
         switch(this.state.heroKey){
             case 0:
-                return <span className='hidden'>?</span>;
+                return <Image src="/images/hidden/heroes/QuincyPortraitHidden.png" alt="Hidden Quincy" width={this.state.imageSize} height={this.state.imageSize}/>;
             case 1:
                 return <Link href="/heroes/quincy"><a><Image src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={"100"} height={"100"} priority={true} /> </a></Link>;
             case 2: 
@@ -117,17 +130,17 @@ class Randomizer extends React.Component{
     render(){
         return(
             <div>
-                <button className='randomizeButton' onClick={this.randomizeLoadout}> 
+                <button className='randomizeButton' onClick={this.rouletteLoadout}> 
                     Random Loadout
                 </button>
-                <button className='randomizeButton' onClick={this.randomizeHero}>
-                    Random hero
+                <button className='randomizeButton' onClick={this.rouletteHero}>
+                    Random Hero
                 </button>
                 <div>
                     <this.DisplayHero/>
                 </div>
-                <button className='randomizeButton' onClick={this.randomizeTower}>
-                    Random towers
+                <button className='randomizeButton' onClick={this.rouletteTower}>
+                    Random Towers
                 </button>
                 <div>
                     <this.displayTowers index={0}/>
