@@ -22,132 +22,40 @@ class NavBar extends React.Component{
                     </li>
                     <li>
                         <DropdownButton id="dropdown-basic-button" title="Primary" className="categoryButton">
-                            <Dropdown.Item>
-                                <Link href="/monkeys/primary/dart">
-                                    <a>Dart Monkey</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/primary/bombshooter">
-                                    <a>Bomb Shooter</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/primary/boomerang">
-                                    <a>Boomerang Monkey</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/primary/gluegunner">
-                                    <a>Gluegunner</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/primary/ice">
-                                    <a>Ice Monkey</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/primary/tackshooter">
-                                    <a>Tackshooter</a>
-                                </Link>
-                            </Dropdown.Item>
-
+                            <Dropdown.Item href="/monkeys/primary/dart">Dart</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/primary/bombshooter">Bombshooter</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/primary/boomerang">Boomerang</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/primary/gluegunner">Gluegunner</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/primary/ice">Ice</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/primary/tackshooter">Tackshooter</Dropdown.Item>
                         </DropdownButton>
                     </li>
                     <li>
                         <DropdownButton id="dropdown-basic-button" title="Military" className="categoryButton">
-                            <Dropdown.Item>
-                                <Link href="/monkeys/military/ace">
-                                    <a>Ace</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/military/buccaneer">
-                                    <a>Buccaneer</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/military/dartlinggunner">
-                                    <a>Dartling Gunner</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/military/helipilot">
-                                    <a>Heli Pilot</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/military/mortar">
-                                    <a>Mortar</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/military/sniper">
-                                    <a>Sniper</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/military/sub">
-                                    <a>Sub</a>
-                                </Link>
-                            </Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/military/ace">Ace</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/military/buccaneer">Buccaneer</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/military/dartlinggunner">Dartling</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/military/helipilot">Heli</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/military/mortar">Mortar</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/military/sniper">Sniper</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/military/sub">Submarine</Dropdown.Item>
                         </DropdownButton>
                     </li>
                     <li>
                         <DropdownButton id="dropdown-basic-button" title="Magic" className="categoryButton">
-                            <Dropdown.Item>
-                            <Link href="/monkeys/magic/alchemist">
-                                    <a>Alchemist</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                            <Link href="/monkeys/magic/druid">
-                                    <a>Druid</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                            <Link href="/monkeys/magic/ninja">
-                                    <a>Ninja</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                            <Link href="/monkeys/magic/super">
-                                    <a>Super</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                            <Link href="/monkeys/magic/wizard">
-                                    <a>Wizard</a>
-                                </Link>
-                            </Dropdown.Item>
-                            
-
+                            <Dropdown.Item href="/monkeys/magic/alchemist">Alchemist</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/magic/druid">Druid</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/magic/ninja">Ninja</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/magic/super">Super</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/magic/wizard">Wizard</Dropdown.Item>
                         </DropdownButton>
                     </li>
                     <li>
                         <DropdownButton id="dropdown-basic-button" title="Support" className="categoryButton">
-                            <Dropdown.Item>
-                                <Link href="/monkeys/support/bananafarm">
-                                    <a>Banana Farm</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/support/engineer">
-                                    <a>Engineer</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/support/spikefactory">
-                                    <a>Spike Factory</a>
-                                </Link>
-                            </Dropdown.Item>
-                            <Dropdown.Item>
-                                <Link href="/monkeys/support/village">
-                                    <a>Village</a>
-                                </Link>
-                            </Dropdown.Item>
-                            
+                            <Dropdown.Item href="/monkeys/support/bananafarm">Banana Farm</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/support/engineer">Engineer</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/support/spikefactory">Spike Factory</Dropdown.Item>
+                            <Dropdown.Item href="/monkeys/support/village">Village</Dropdown.Item> 
                         </DropdownButton>
                     </li>
                     
