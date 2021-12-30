@@ -13,7 +13,7 @@ class quincy extends React.Component{
                 <h1>Quincy</h1>
                 <p>Quincy is a hero in BTDB2. Quincy uses his bow to shoot the bloons.</p>
                 <p>Cost to unlock: unlocked at start</p> 
-                <Image src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={"100"} height={"100"} priority={true} />
+                <Image src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={"100"} height={"100"}  />
 
             </div>
         )

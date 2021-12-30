@@ -13,7 +13,7 @@ class obyn extends React.Component{
                 <h1>Obyn Greenfoot</h1>
                 <p>Obyn Greenfoot is a hero in BTDB2. Obyn can attack through obstacles with his spirit wolf.</p>
                 <p>Cost to unlock: 3000 monkey money</p> 
-                <Image src='/images/heroes/ObynGreenFootPortrait.webp' alt='Obyn' width={"100"} height={"100"} priority={true}/>
+                <Image src='/images/heroes/ObynGreenFootPortrait.webp' alt='Obyn' width={"100"} height={"100"} />
 
             </div>
         )

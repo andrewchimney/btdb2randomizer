@@ -13,7 +13,7 @@ class strikerjones extends React.Component{
                 <h1>Striker Jones</h1>
                 <p>Striker Jones is a hero in BTDB2. Striker Jones blasts bloons with his bazooka and buffs explosive towers around him.</p>
                 <p>Cost to unlock: 3000 monkey money</p> 
-                <Image src='/images/heroes/StrikerJonesPortrait.webp' alt='Striker Jones' width={"100"} height={"100"} priority={true} />
+                <Image src='/images/heroes/StrikerJonesPortrait.webp' alt='Striker Jones' width={"100"} height={"100"}  />
 
             </div>
         )
