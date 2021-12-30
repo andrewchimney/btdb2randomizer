@@ -8,20 +8,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
   return (
     <div className='app'>
+      <main>
+      <section className="text">
         <header>
           <h1>Bloons Tower Defense Battles 2 Randomizer</h1>
         </header>
-        <main>
           <p>
             BTDB2 randomizer is a tool to generate random heroes, towers, or both for Bloons Tower Defense Battles 2. 
             Click the generate hero button to generate a random hero, the generate tower button to generate a random tower, 
             or the generate loadout button to generate both.
           </p>
-          <Randomizer/>
+      </section>
+        <Randomizer/>
         </main>
-        <footer>
-
-        </footer>
-    </div>
+      </div>
   )
 }

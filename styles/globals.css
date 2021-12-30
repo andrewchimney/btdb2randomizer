@@ -6,30 +6,71 @@
   url("/fonts/Oetztype/Oetztype.ttf") format("truetype"),
   url("/fonts/Oetztype/Oetztype.svg#Oetztype") format("svg"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
-header{
-  overflow: hidden;
-  background-color: rgba(0, 0 , 0, 0.8);
+body{
+  background-image: url("../public/images/FrozenOver_No_UI.webp");
+  background-size: 100vw 110vh;
+  color: black;
+}
+.text{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 1.5vh;
+  border-style: solid;
+  border-color: rgb(154, 74, 38);
+  background-color: rgb(254, 198, 0);
+  border-radius: 12px;
+}
+p{
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 .hidden{
   font-size: 80px;
   padding-left: 30px;
   padding-right: 30px;
-
+}
+.randomizeLoadout{
+  font-family: "Oetztype";
+  font-size: xx-large;
+  display: block;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: rgb(254, 198, 0);
+  border-style: solid;
+  border-color: rgb(154, 74, 38);
+  box-shadow: 10px;
+  border-radius: 12px;
 }
 .randomizeButton{
   font-family: "Oetztype";
+  font-size: x-large;
   display: block;
   margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   background-color: rgb(254, 198, 0);
-  border: 2px;
+  border-style: solid;
   border-color: rgb(154, 74, 38);
-  box-shadow: 10px;
+  border-radius: 12px;
 }
 nav{
+  margin-left: 23vw;
+  margin-right: 23vw;
+  margin-top: 1.5vh;
+  border-style: solid;
+  border-color: rgb(154, 74, 38);
+  background-color: rgb(254, 198, 0);
+  border-radius: 12px;
+}
+a{
+  color: black;
+  text-decoration: none;
+  padding-right: 10px;
   margin: 0;
-  padding: 0;
-  border: none;
-  background-color: rgba(0, 0 , 0, 0.8);
+}
+a:hover{
+  color: black;
 }
 ul{
   list-style-type: none;
@@ -50,47 +91,28 @@ li{
   margin: 0;
   border: 0;
   background: transparent;
-  color: white;
+  color: black;
   font-size: x-large;
-  
-
 }
 .dropdown-menu{
-  background-color: rgba(0, 0 , 0, 0.8);
-  border: none;
+  background-color: rgb(254, 198, 0);
+  border: solid;
+  border-color: rgb(154, 74, 38);
+  border-radius: 12px;
   text-align: center;
 }
 
 .ddItem{
-  color: white;
+  color: black;
   display: block;
   background-color: transparent;
   font-size: x-large;
 }
 body{
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-family: "Oetztype";
-  background-image: url("../public/images/FrozenOver_No_UI.webp");
-  background-size: 100vw 100vh;
-  color: white;
-
 }
 .monkey{
   text-align: center;
 }
-a{
-  color: white;
-  text-decoration: none;
-  padding-right: 10px;
-  margin: 0;
-}
-.Link{
-  margin: 0;
-}
-p{
-  padding-left: 20vw;
-  padding-right: 20vw;
-  background-color: rgba(0, 0 , 0, 0.8);
-}
+
