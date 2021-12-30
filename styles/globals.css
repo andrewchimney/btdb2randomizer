@@ -8,15 +8,13 @@
 }
 header{
   overflow: hidden;
+  background-color: rgba(0, 0 , 0, 0.8);
 }
 .hidden{
   font-size: 80px;
   padding-left: 30px;
   padding-right: 30px;
 
-}
-.app{
-  background-color: rgb(79, 146, 235);
 }
 .randomizeButton{
   font-family: "Oetztype";
@@ -28,35 +26,71 @@ header{
   box-shadow: 10px;
 }
 nav{
-  background-color: rgb(254, 198, 0);
   margin: 0;
   padding: 0;
+  border: none;
+  background-color: rgba(0, 0 , 0, 0.8);
 }
 ul{
   list-style-type: none;
+  margin: 0;
 }
 li{
-  display: inline;
+  display: inline-block;
+  margin: 0;
 }
 .NavButton{
   padding-left: .5vw;
   padding-right: .5vw;
-  color: yellow;
+  margin: 0;
+  font-size: x-large;
 }
 .categoryButton{
   display: inline;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: x-large;
+  
+
+}
+.dropdown-menu{
+  background-color: rgba(0, 0 , 0, 0.8);
+  border: none;
+  text-align: center;
+}
+
+.ddItem{
+  color: white;
+  display: block;
+  background-color: transparent;
+  font-size: x-large;
 }
 body{
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: "Oetztype";
+  background-image: url("../public/images/FrozenOver_No_UI.webp");
+  background-size: 100vw 100vh;
+  color: white;
+
 }
 .monkey{
   text-align: center;
 }
 a{
-  color: black;
+  color: white;
   text-decoration: none;
   padding-right: 10px;
+  margin: 0;
+}
+.Link{
+  margin: 0;
+}
+p{
+  padding-left: 20vw;
+  padding-right: 20vw;
+  background-color: rgba(0, 0 , 0, 0.8);
 }

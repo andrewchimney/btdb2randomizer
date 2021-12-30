@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import React from 'react'
 import styles from '../styles/Home.module.css'
 import Randomizer from '../components/Randomizer'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,24 +8,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
   return (
     <div className='app'>
-      <Head>
-        <title>BTDB2 Randomizer</title>
-        <meta charSet="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="viewport" content='height=device-height, initial-scale=1'/>
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Web site created using create-react-app"/>
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
-        <link rel="manifest" href="/site.webmanifest"/>
-      </Head>
         <header>
           <h1>Bloons Tower Defense Battles 2 Randomizer</h1>
         </header>
         <main>
+          <p>
+            BTDB2 randomizer is a tool to generate random heroes, towers, or both for Bloons Tower Defense Battles 2. 
+            Click the generate hero button to generate a random hero, the generate tower button to generate a random tower, 
+            or the generate loadout button to generate both.
+          </p>
           <Randomizer/>
         </main>
         <footer>

@@ -48,6 +48,7 @@ class Randomizer extends React.Component{
         this.rouletteTower();
     }
     rouletteHero(){
+        clearInterval(timer)
         this.randomizeHero();
         let timer = setInterval(this.randomizeHero, 150);
         setTimeout(function(){clearInterval(timer);}, 2000);
