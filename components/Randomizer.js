@@ -1,13 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/Dropdown";
+import { Alert } from 'react-bootstrap';
 class Randomizer extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             heroKey: 0,
             towersKey: [0,0,0,0],
-            imageSize: 150
+            imageSize: 150,
+            heroExcluded: [],
+            towersExcluded: []
         };
         this.randomizeHero = this.randomizeHero.bind(this);
         this.DisplayHero = this.DisplayHero.bind(this);
@@ -16,6 +21,11 @@ class Randomizer extends React.Component{
         this.rouletteLoadout = this.rouletteLoadout.bind(this);
         this.rouletteHero = this.rouletteHero.bind(this);
         this.rouletteTower = this.rouletteTower.bind(this);
+        this.includesHero = this.includesHero.bind(this);
+        this.includesTower =this.includesTower.bind(this);
+        this.resetExcludedTowers =this.resetExcludedTowers.bind(this);
+        this.resetExcludedHeroes = this.resetExcludedHeroes.bind(this);
+
     }
     generateTowers(){
         return [Math.floor(Math.random()*22+1), Math.floor(Math.random()*22+1) , Math.floor(Math.random()*22+1)  , Math.floor(Math.random()*22+1)];
@@ -30,18 +40,18 @@ class Randomizer extends React.Component{
     }
     randomizeHero(){
         let hero = (Math.floor(Math.random()*4))+1;
-        while(this.state.heroKey===hero){
+        while(this.includesHero(hero)){
             hero = (Math.floor(Math.random()*4))+1;
         }
         this.setState({heroKey: hero});
-
     }
     randomizeTower(){
         let towers = this.generateTowers();
-        while(!this.checkUnique(towers)){
+        while(!this.checkUnique(towers) || this.includesTower(towers)){
             towers = this.generateTowers();
         }
         this.setState({towersKey: towers});
+
     }
     rouletteLoadout(){
         this.rouletteHero();
@@ -50,7 +60,11 @@ class Randomizer extends React.Component{
     rouletteHero(){
         this.randomizeHero();
         let timer = setInterval(this.randomizeHero, 150);
-        setTimeout(function(){clearInterval(timer);}, 2000);
+        setTimeout(function(){
+            clearInterval(timer);
+        }, 2000);
+
+
        
     }
     rouletteTower(){
@@ -64,7 +78,7 @@ class Randomizer extends React.Component{
             case 0:
                 return <Image src="/images/hidden/monkeys/DartHidden.png" alt="hidden Dart Monkey" width={this.state.imageSize} height={this.state.imageSize} priority={true}/>
             case 1:
-                return <Link href="monkeys/military/ace"><a><Image src="/images/monkeys/Ace.webp" alt='Monkey Ace' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>
+                return <Link href="monkeys/military/ace"><a><Image className="test"src="/images/monkeys/Ace.webp" alt='Monkey Ace' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>
             case 2:
                 return <Link href="monkeys/magic/achemist"><a><Image src="/images/monkeys/Alchemist.webp" alt='Alchemist mMnkey' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>
             case 3:
@@ -116,7 +130,7 @@ class Randomizer extends React.Component{
             case 0:
                 return <Image src="/images/hidden/heroes/QuincyPortraitHidden.png" alt="Hidden Quincy" width={this.state.imageSize} height={this.state.imageSize} priority={true}/>;
             case 1:
-                return <Link href="/heroes/quincy"><a><Image src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>;
+                return <Link href="/heroes/quincy"><a><Image id="h1" src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>;
             case 2: 
                 return <Link href="/heroes/gwendolin"><a><Image src='/images/heroes/GwendolinPortrait.webp' alt='Gwendolin' width={this.state.imageSize} height={this.state.imageSize} priority={true}/></a></Link>;
             case 3: 
@@ -127,28 +141,157 @@ class Randomizer extends React.Component{
                 return <p>default case returned(error)</p>
         }
     }
+    excludeHero(val){
+        let arr = this.state.heroExcluded;
+        let index = arr.indexOf(val);
+        let elementId= "h"+val;
+        if(!(index===-1)){
+            arr.splice(index, 1);
+            document.getElementById(elementId).style.backgroundColor="rgb(254, 198, 0)"
+        }
+        else{
+            if(arr.length>2){
+                alert("must have at least 1 hero");
+            }else{
+                arr.push(val);
+            document.getElementById(elementId).style.backgroundColor="rgb(200,50,50)";
+            }
+        }
+        this.setState({heroExcluded: arr})
+    }
+    includesHero(hero){
+        for(let i=0;i<this.state.heroExcluded.length;i++){
+            if(this.state.heroExcluded[i]===hero){
+                return true;
+            }
+
+        }
+        return false;
+    }
+    excludeTower(val){
+        let arr = this.state.towersExcluded;
+        let index = arr.indexOf(val);
+        let elementId= "t"+val;
+        if(!(index===-1)){
+            arr.splice(index, 1);
+            document.getElementById(elementId).style.backgroundColor="rgb(254, 198, 0)"
+        }
+        else{
+            console.log(arr.length);
+            if(arr.length>17){
+                alert("must have at least 4 towers");
+            } else{
+                arr.push(val);
+                document.getElementById(elementId).style.backgroundColor="rgb(200,50,50)";
+            }
+        }
+        this.setState({towersExcluded: arr})
+    }
+    includesTower(towers){
+        for(let i=0;i<this.state.towersExcluded.length;i++){
+            for(let j=0;j<towers.length; j++){
+                if(this.state.towersExcluded[i]===towers[j]){
+                    return true;
+                }
+            }
+
+        }
+        return false;
+    }
+    resetExcludedTowers(){
+        this.setState({towersExcluded: []});
+        for(let i=1;i<22;i++){
+            let elementId = "t"+i;
+            document.getElementById(elementId).style.backgroundColor="rgb(254, 198, 0)"
+        }
+    }
+    resetExcludedHeroes(){
+        this.setState({heroExcluded: []});
+        for(let i=1;i<4;i++){
+            let elementId = "h"+i;
+            document.getElementById(elementId).style.backgroundColor="rgb(254, 198, 0)"
+        }
+    }
+
     render(){
         return(
             <div>
                 <button className='randomizeLoadout' onClick={this.rouletteLoadout}> 
                     Random Loadout
                 </button>
-                <button className='randomizeButton' onClick={this.rouletteHero}>
-                    Random Hero
-                </button>
+                <ul>
+                    <li>
+                        <button className='randomizeButton' onClick={this.rouletteHero}>
+                            Random Hero
+                        </button>
+                    </li>
+                    <li>
+                        <DropdownButton id="dropdown-basic-button" title="Exclude Heroes" bsPrefix="excludeButton" autoClose={false}>
+                            <Dropdown.Item bsPrefix="ddH" onClick={this.resetExcludedHeroes}>Reset</Dropdown.Item>   
+                            <Dropdown.Item id="h1" bsPrefix="ddH" onClick={()=>this.excludeHero(1)}>Quincy</Dropdown.Item>
+                            <Dropdown.Item id="h2" bsPrefix="ddH" onClick={()=>this.excludeHero(2)}>Gwen</Dropdown.Item>
+                            <Dropdown.Item id="h3" bsPrefix="ddH" onClick={()=>this.excludeHero(3)}>Obyn</Dropdown.Item>
+                            <Dropdown.Item id="h4" bsPrefix="ddH" onClick={()=>this.excludeHero(4)}>Striker</Dropdown.Item>
+                        </DropdownButton>
+                    </li>
+                </ul>
                 <div>
                     <this.DisplayHero/>
                 </div>
-                <button className='randomizeButton' onClick={this.rouletteTower}>
-                    Random Towers
-                </button>
-                <div>
-                    <this.displayTowers index={0}/>
-                    <this.displayTowers index={1}/>
-                    <this.displayTowers index={2}/>
-                    <this.displayTowers index={3}/>
+                <ul>
+                    <li> 
+                        <button className='randomizeButton' onClick={this.rouletteTower}>
+                        Random Towers
+                        </button>
 
-                </div>
+                    </li>
+                    <li>
+                        <DropdownButton id="dropdown-basic-button" title="Exclude Towers" bsPrefix="excludeButton" autoClose={false}>
+                            <div>
+                                <Dropdown.Item bsPrefix="ddT" onClick={this.resetExcludedTowers}>Reset</Dropdown.Item>
+                                <Dropdown.Item id="t1" bsPrefix="ddT" onClick={() => this.excludeTower(1)}>Ace</Dropdown.Item>
+                                <Dropdown.Item id="t2" bsPrefix="ddT" onClick={() => this.excludeTower(2)}>Alchemist</Dropdown.Item>
+                                <Dropdown.Item id="t3" bsPrefix="ddT" onClick={() => this.excludeTower(3)}>Banana Farm</Dropdown.Item>
+                            </div>
+                            <div>
+                                <Dropdown.Item id="t4" bsPrefix="ddT" onClick={() => this.excludeTower(4)}>Bombshooter</Dropdown.Item>
+                                <Dropdown.Item id="t5" bsPrefix="ddT" onClick={() => this.excludeTower(5)}>Boomerang</Dropdown.Item>
+                                <Dropdown.Item id="t6" bsPrefix="ddT" onClick={() => this.excludeTower(6)}>Buccaneer</Dropdown.Item>
+                                <Dropdown.Item id="t7" bsPrefix="ddT" onClick={() => this.excludeTower(7)}>Dart</Dropdown.Item>
+                            </div>
+                            <div>
+                                <Dropdown.Item id="t8" bsPrefix="ddT" onClick={() => this.excludeTower(8)}>Dartling</Dropdown.Item>
+                                <Dropdown.Item id="t9" bsPrefix="ddT" onClick={() => this.excludeTower(9)}>Druid</Dropdown.Item>
+                                <Dropdown.Item id="t10" bsPrefix="ddT" onClick={() => this.excludeTower(10)}>Engineer</Dropdown.Item>
+                                <Dropdown.Item id="t11" bsPrefix="ddT" onClick={() => this.excludeTower(11)}>Gluegunner</Dropdown.Item>
+                            </div>
+                            <div>
+                                <Dropdown.Item id="t12" bsPrefix="ddT" onClick={() => this.excludeTower(12)}>Heli</Dropdown.Item>
+                                <Dropdown.Item id="t13" bsPrefix="ddT" onClick={() => this.excludeTower(13)}>Ice</Dropdown.Item>
+                                <Dropdown.Item id="t14" bsPrefix="ddT" onClick={() => this.excludeTower(14)}>Mortar</Dropdown.Item>
+                                <Dropdown.Item id="t15" bsPrefix="ddT" onClick={() => this.excludeTower(15)}>Ninja</Dropdown.Item>
+                            </div>
+                            <div>
+                                <Dropdown.Item id="t16" bsPrefix="ddT" onClick={() => this.excludeTower(16)}>Sniper</Dropdown.Item>
+                                <Dropdown.Item id="t17" bsPrefix="ddT" onClick={() => this.excludeTower(17)}>SpikeFactory</Dropdown.Item>
+                                <Dropdown.Item id="t18" bsPrefix="ddT" onClick={() => this.excludeTower(18)}>Sub</Dropdown.Item>
+                                <Dropdown.Item id="t19" bsPrefix="ddT" onClick={() => this.excludeTower(19)}>Super</Dropdown.Item>
+                            </div>
+                            <div>
+                                <Dropdown.Item id="t20" bsPrefix="ddT" onClick={() => this.excludeTower(20)}>Tackshooter</Dropdown.Item>
+                                <Dropdown.Item id="t21" bsPrefix="ddT" onClick={() => this.excludeTower(21)}>Village</Dropdown.Item>
+                                <Dropdown.Item id="t22" bsPrefix="ddT" onClick={() => this.excludeTower(22)}>Wizard</Dropdown.Item>
+                            </div>
+                        </DropdownButton>
+
+                    </li>
+                        <div>
+                            <this.displayTowers index={0}/>
+                            <this.displayTowers index={1}/>
+                            <this.displayTowers index={2}/>
+                            <this.displayTowers index={3}/>
+                        </div>
+                </ul>
             </div>
         )
     }

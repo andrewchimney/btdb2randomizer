@@ -29,6 +29,10 @@ p{
   padding-left: 30px;
   padding-right: 30px;
 }
+.Image{
+  box-shadow:10px 5px 5px red !important;
+  overflow: visible !important;
+}
 .randomizeLoadout{
   font-family: "Oetztype";
   font-size: xx-large;
@@ -45,7 +49,17 @@ p{
 .randomizeButton{
   font-family: "Oetztype";
   font-size: x-large;
-  display: block;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: rgb(254, 198, 0);
+  border-style: solid;
+  border-color: rgb(154, 74, 38);
+  border-radius: 12px;
+}
+.excludeButton{
+  font-family: "Oetztype";
+  font-size: x-large;
   margin: auto;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -101,12 +115,18 @@ li{
   border-radius: 12px;
   text-align: center;
 }
-
 .ddItem{
   color: black;
   display: block;
-  background-color: transparent;
   font-size: x-large;
+}
+.ddH{
+  color: black;
+  display: block;
+  font-size: x-large;
+}
+.ddT{
+  display: inline;
 }
 body{
   text-align: center;
@@ -115,4 +135,5 @@ body{
 .monkey{
   text-align: center;
 }
+
 
