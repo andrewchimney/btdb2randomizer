@@ -19,11 +19,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
         <link rel="canonical" href="https://btdb2randomizer.andrewchimney.com"/>
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:site" content="@nytimes"/>
+        <meta name="twitter:site" content="@btdb2randomizer"/>
         <meta name="twitter:creator" content="@SarahMaslinNir"/>
-        <meta name="twitter:title" content="Parade of Fans for Houston’s Funeral"/>
-        <meta name="twitter:description" content="NEWARK - The guest list and parade of limousines with celebrities emerging from them seemed more suited to a red carpet event in Hollywood or New York than than a gritty stretch of Sussex Avenue near the former site of the James M. Baxter Terrace public housing project here."/>
-        <meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg"></meta>
+        <meta name="twitter:title" content="Randomizer"/>
+        <meta name="twitter:description" content="Bloons Tower Defense Battles 2 Randomizer."/>
+        <meta name="twitter:image" content="https://cdn.cloudflare.steamstatic.com/steam/apps/1276390/header.jpg?t=1638458113"></meta>
       </Head>
       <SSRProvider>
         <NavBar/> 
