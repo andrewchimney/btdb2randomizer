@@ -4,7 +4,7 @@ class village extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            imageSize: 100
+            imageSize: 400
         };
     }
     render(){

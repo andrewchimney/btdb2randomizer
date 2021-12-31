@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
-    <div className='app'>
       <main>
       <section className="text">
         <header>
@@ -19,8 +18,9 @@ export default function Home() {
             or the generate loadout button to generate both.
           </p>
       </section>
+      <section className="randomizer">
         <Randomizer/>
+      </section>
         </main>
-      </div>
   )
 }
