@@ -9,7 +9,7 @@ class Randomizer extends React.Component{
         super(props);
         this.state = {
             heroKey: 0,
-            towersKey: [0,0,0,0],
+            towersKey: [0,0,0],
             imageSize: 250,
             heroExcluded: [],
             towersExcluded: []
@@ -28,7 +28,7 @@ class Randomizer extends React.Component{
 
     }
     generateTowers(){
-        return [Math.floor(Math.random()*22+1), Math.floor(Math.random()*22+1) , Math.floor(Math.random()*22+1)  , Math.floor(Math.random()*22+1)];
+        return [Math.floor(Math.random()*22+1), Math.floor(Math.random()*22+1) , Math.floor(Math.random()*22+1) ];
     }
     checkUnique(arr){
         let l = arr.length;
@@ -178,8 +178,8 @@ class Randomizer extends React.Component{
         }
         else{
             console.log(arr.length);
-            if(arr.length>17){
-                alert("must have at least 4 towers");
+            if(arr.length>18){
+                alert("must have at least 3 towers");
             } else{
                 arr.push(val);
                 document.getElementById(elementId).style.backgroundColor="rgb(200,50,50)";
@@ -294,7 +294,6 @@ class Randomizer extends React.Component{
                             <this.displayTowers className="t0" index={0} />
                             <this.displayTowers className="t1" index={1} />
                             <this.displayTowers className="t2" index={2} />
-                            <this.displayTowers className="t3" index={3} />
                         </div>
                     </ul>
                     </li>
