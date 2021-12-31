@@ -9,11 +9,13 @@ function MyApp({ Component, pageProps }) {
   return(
     <>
       <Head>
-        <title>BTDB2 Randomizer</title>
+        <title>Bloons Tower Defense Battles 2 Randomizer</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="viewport" content='height=device-height, initial-scale=1'/>
-        <meta name="description" content="Bloons Tower Defense Battles 2 Randomizer. Randomize towers or heroes."/>
+        <meta name="description" content="BTDB2 randomizer is a tool to generate random heroes, towers, or both for Bloons Tower Defense Battles 2. 
+            Click the generate hero button to generate a random hero, the generate tower button to generate a random tower, 
+            or the generate loadout button to generate both."/>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>

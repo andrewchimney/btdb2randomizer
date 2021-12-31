@@ -217,14 +217,14 @@ class Randomizer extends React.Component{
         return (
             <>
                 <button className='randomizeLoadout' onClick={this.rouletteLoadout}>
-                    Random Loadout
+                    <h2>Random Loadout</h2>
                 </button>
                 <ul className="randomizerGrid">
                     <li className="r1">
                     <ul className="randomizeHero">
                         <li className="button">
                             <button className='randomizeButton' onClick={this.rouletteHero}>
-                                Random Hero
+                                <h2>Random Hero</h2>
                             </button>
                         </li>
                         <li className="button">
@@ -247,46 +247,46 @@ class Randomizer extends React.Component{
                     <ul className="randomizeTower">
                         <li className="button">
                             <button className='randomizeButton' onClick={this.rouletteTower}>
-                                Random Towers
+                                <h2>Random Towers</h2>
                             </button>
                         </li>
                         <li className="button">
                             <DropdownButton id="dropdown-basic-button" title="Exclude Towers" bsPrefix="excludeButton excludeButton-menu" autoClose={false}>
-                                <div>
+                                <h3>
                                     <Dropdown.Item bsPrefix="ddT" onClick={this.resetExcludedTowers}>Reset</Dropdown.Item>
                                     <Dropdown.Item id="t1" bsPrefix="ddT" onClick={() => this.excludeTower(1)}>Ace</Dropdown.Item>
                                     <Dropdown.Item id="t2" bsPrefix="ddT" onClick={() => this.excludeTower(2)}>Alchemist</Dropdown.Item>
                                     <Dropdown.Item id="t3" bsPrefix="ddT" onClick={() => this.excludeTower(3)}>Banana Farm</Dropdown.Item>
-                                </div>
-                                <div>
+                                </h3>
+                                <h3>
                                     <Dropdown.Item id="t4" bsPrefix="ddT" onClick={() => this.excludeTower(4)}>Bombshooter</Dropdown.Item>
                                     <Dropdown.Item id="t5" bsPrefix="ddT" onClick={() => this.excludeTower(5)}>Boomerang</Dropdown.Item>
                                     <Dropdown.Item id="t6" bsPrefix="ddT" onClick={() => this.excludeTower(6)}>Buccaneer</Dropdown.Item>
                                     <Dropdown.Item id="t7" bsPrefix="ddT" onClick={() => this.excludeTower(7)}>Dart</Dropdown.Item>
-                                </div>
-                                <div>
+                                </h3>
+                                <h3>
                                     <Dropdown.Item id="t8" bsPrefix="ddT" onClick={() => this.excludeTower(8)}>Dartling</Dropdown.Item>
                                     <Dropdown.Item id="t9" bsPrefix="ddT" onClick={() => this.excludeTower(9)}>Druid</Dropdown.Item>
                                     <Dropdown.Item id="t10" bsPrefix="ddT" onClick={() => this.excludeTower(10)}>Engineer</Dropdown.Item>
                                     <Dropdown.Item id="t11" bsPrefix="ddT" onClick={() => this.excludeTower(11)}>Gluegunner</Dropdown.Item>
-                                </div>
-                                <div>
+                                </h3>
+                                <h3>
                                     <Dropdown.Item id="t12" bsPrefix="ddT" onClick={() => this.excludeTower(12)}>Heli</Dropdown.Item>
                                     <Dropdown.Item id="t13" bsPrefix="ddT" onClick={() => this.excludeTower(13)}>Ice</Dropdown.Item>
                                     <Dropdown.Item id="t14" bsPrefix="ddT" onClick={() => this.excludeTower(14)}>Mortar</Dropdown.Item>
                                     <Dropdown.Item id="t15" bsPrefix="ddT" onClick={() => this.excludeTower(15)}>Ninja</Dropdown.Item>
-                                </div>
-                                <div>
+                                </h3>
+                                <h3>
                                     <Dropdown.Item id="t16" bsPrefix="ddT" onClick={() => this.excludeTower(16)}>Sniper</Dropdown.Item>
                                     <Dropdown.Item id="t17" bsPrefix="ddT" onClick={() => this.excludeTower(17)}>SpikeFactory</Dropdown.Item>
                                     <Dropdown.Item id="t18" bsPrefix="ddT" onClick={() => this.excludeTower(18)}>Sub</Dropdown.Item>
                                     <Dropdown.Item id="t19" bsPrefix="ddT" onClick={() => this.excludeTower(19)}>Super</Dropdown.Item>
-                                </div>
-                                <div>
+                                </h3>
+                                <h3>
                                     <Dropdown.Item id="t20" bsPrefix="ddT" onClick={() => this.excludeTower(20)}>Tackshooter</Dropdown.Item>
                                     <Dropdown.Item id="t21" bsPrefix="ddT" onClick={() => this.excludeTower(21)}>Village</Dropdown.Item>
                                     <Dropdown.Item id="t22" bsPrefix="ddT" onClick={() => this.excludeTower(22)}>Wizard</Dropdown.Item>
-                                </div>
+                                </h3>
                             </DropdownButton>
 
                         </li>

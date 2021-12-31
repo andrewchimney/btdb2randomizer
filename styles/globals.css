@@ -122,6 +122,9 @@ p{
 }
 
 /*randomizer*/
+h2{
+  font-size: inherit;
+}
 
 .randomizerGrid{
   display: grid;
