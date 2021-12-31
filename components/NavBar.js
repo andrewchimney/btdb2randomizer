@@ -18,7 +18,7 @@ class NavBar extends React.Component{
                             <Dropdown.Item bsPrefix="ddItem" href="/heroes/quincy">Quincy</Dropdown.Item>
                             <Dropdown.Item bsPrefix="ddItem" href="/heroes/gwendolin">Gwen</Dropdown.Item>
                             <Dropdown.Item bsPrefix="ddItem" href="/heroes/obyn">Obyn</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/heroes/strikejones">Striker</Dropdown.Item>
+                            <Dropdown.Item bsPrefix="ddItem" href="/heroes/strikerjones">Striker</Dropdown.Item>
                         </DropdownButton>
                     </li>
                     <li className="primary">
