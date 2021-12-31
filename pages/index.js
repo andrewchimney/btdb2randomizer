@@ -4,10 +4,24 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import Randomizer from '../components/Randomizer'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Script from 'next/Script'
 
 export default function Home() {
   return (
       <main>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-T35FEHWMFS"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-T35FEHWMFS');
+        `}
+        </Script>
       <section className="text">
         <header>
           <h1>Bloons Tower Defense Battles 2 Randomizer</h1>
