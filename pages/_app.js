@@ -4,6 +4,7 @@ import SSRProvider from 'react-bootstrap/SSRProvider';
 import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
+import Script from 'next/Script'
 
 function MyApp({ Component, pageProps }) {
   return(
@@ -20,21 +21,26 @@ function MyApp({ Component, pageProps }) {
         <link rel="canonical" href="https://btdb2randomizer.andrewchimney.com"/>
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@btdb2randomizer"/>
-        <meta name="twitter:creator" content="@SarahMaslinNir"/>
-        <meta name="twitter:title" content="Randomizer"/>
-        <meta name="twitter:description" content="Bloons Tower Defense Battles 2 Randomizer."/>
+        <meta name="twitter:creator" content="@SarahMaslinNir" />
+        <meta name="twitter:title" content="Randomizer" />
+        <meta name="twitter:description" content="Bloons Tower Defense Battles 2 Randomizer." />
         <meta name="twitter:image" content="https://cdn.cloudflare.steamstatic.com/steam/apps/1276390/header.jpg?t=1638458113"></meta>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T35FEHWMFS"></script>
-        <script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-T35FEHWMFS"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
+          function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'G-T35FEHWMFS');
-          </script> 
+        `}
+        </Script>
       </Head>
       <SSRProvider>
-        <NavBar/> 
+        <NavBar />
         <Component {...pageProps} />
       </SSRProvider>
     </>
