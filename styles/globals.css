@@ -52,10 +52,11 @@ nav{
 }
 .navGrid{
   margin-left: auto;
-  padding-left: 0px;
+  padding-left: 10px;
+  padding-right: 13px;
   margin-top: 0;
   margin-right: auto;
-  max-width: 1000px;
+  max-width: mmin(80vw, 1000px);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
@@ -131,6 +132,7 @@ p{
   border-radius: 15px;
   width: max(20vw, 170px);
   height: 50px;
+  background-color: white;
   
 }
 .randomizeHero{
@@ -143,11 +145,15 @@ p{
 }
 .displayTowerContainer{
   margin: auto;
-  padding-top: 10vh;
+  padding-top: 5vw;
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(2,150px);
   grid-template-rows: repeat(2, 150px);
+}
+.displayHero{
+  padding-top:5vw;
+  padding-bottom: 5vw;
 }
 .t0{
   grid-column: 1 / 2;
@@ -169,11 +175,14 @@ p{
   border-radius: 25px;
   width: max(13vw, 170px);
   height: 35px;
+  background-color: white;
 }
+
 .excludeButton{
   border-radius: 25px;
   width: max(13vw, 170px);
   height: 35px;
+  background-color: white;
 }
 ul{
   list-style-type: none;
@@ -183,10 +192,6 @@ li{
   padding: 0;
   display: inline-block;
   
-}
-.displayHero{
-  padding-top: 85px;
-  padding-bottom: 50px;
 }
 .button{
   height: 35px !important;
