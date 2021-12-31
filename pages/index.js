@@ -4,7 +4,7 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import Randomizer from '../components/Randomizer'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Script from 'next/Script'
+import Script from 'next/script'
 
 export default function Home() {
   return (
