@@ -22,6 +22,8 @@ export default function Home() {
           gtag('config', 'G-T35FEHWMFS');
         `}
         </Script>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1114753024999011"
+     crossorigin="anonymous" strategy="afterInteractive"></Script>
       <section className="text">
         <header>
           <h1>Bloons Tower Defense Battles 2 Randomizer</h1>
