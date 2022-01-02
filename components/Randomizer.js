@@ -253,7 +253,7 @@ class Randomizer extends React.Component{
                 <div className="randomizerGrid">
                     <div className="r1">
 
-                        <div classname="buttons1">
+                        <div className="buttons1">
                             <ButtonGroup>
                                 <Button className="shadow-none" onClick={this.randomizeHero}>
                                     Random Hero
