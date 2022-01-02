@@ -34,7 +34,7 @@ class NavBar extends React.Component{
                                     <NavDropdown.Item className="navButton" href="/heroes/quincy">Quincy</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/heroes/gwendolin">Gwen</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/heroes/obyn">Obyn</NavDropdown.Item>
-                                    <NavDropdown.Item className="navButton" ref="/heroes/strikerjones">Striker</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/heroes/strikerjones">Striker</NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown className="navMenu" title="Primary" id="offcanvasNavbarDropdown">
                                     <NavDropdown.Item className="navButton" href="/heroes/quincy">Quincy</NavDropdown.Item>
