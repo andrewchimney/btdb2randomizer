@@ -30,19 +30,19 @@ class NavBar extends React.Component{
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Nav.Link href="/">Home</Nav.Link>
                                 <Nav.Link href="/vip">Vip Calculator</Nav.Link>
-                                <NavDropdown className="navMenu" title="Heroes" id="offcanvasNavbarDropdown">
+                                <NavDropdown className="navMenu shadow-none" title="Heroes" id="offcanvasNavbarDropdown">
                                     <NavDropdown.Item className="navButton" href="/heroes/quincy">Quincy</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/heroes/gwendolin">Gwen</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/heroes/obyn">Obyn</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/heroes/strikerjones">Striker</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown className="navMenu" title="Primary" id="offcanvasNavbarDropdown">
+                                <NavDropdown className="navMenu shadow-none" title="Primary" id="offcanvasNavbarDropdown">
                                     <NavDropdown.Item className="navButton" href="/heroes/quincy">Quincy</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/heroes/gwendolin">Gwen</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/heroes/obyn">Obyn</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/heroes/strikerjones">Striker</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown className="navMenu" title="Military" id="offcanvasNavbarDropdown">
+                                <NavDropdown className="navMenu shadow-none" title="Military" id="offcanvasNavbarDropdown">
                                     <NavDropdown.Item className="navButton" href="/monkeys/military/ace">Ace</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/monkeys/military/buccaneer">Ship</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/monkeys/military/dartlinggunner">Dartling</NavDropdown.Item>
@@ -51,14 +51,14 @@ class NavBar extends React.Component{
                                     <NavDropdown.Item className="navButton" href="/monkeys/military/sniper">Sniper</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/monkeys/military/sub">Sub</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown className="navMenu" title="Magic" id="offcanvasNavbarDropdown">
+                                <NavDropdown className="navMenu shadow-none" title="Magic" id="offcanvasNavbarDropdown">
                                     <NavDropdown.Item className="navButton" href="/monkeys/magic/alchemist">Alchemist</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/monkeys/magic/druid">Druid</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/monkeys/magic/ninja">Ninja</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/monkeys/magic/super">Super</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/monkeys/magic/wizard">Wizard</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown className="navMenu" title="Support" id="offcanvasNavbarDropdown">
+                                <NavDropdown className="navMenu shadow-none" title="Support" id="offcanvasNavbarDropdown">
                                     <NavDropdown.Item className="navButton" href="/monkeys/support/bananafarm">Farm</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/monkeys/support/engineer">Engineer</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/monkeys/support/spikefactory">Spike Factory</NavDropdown.Item>
