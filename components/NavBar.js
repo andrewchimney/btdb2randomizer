@@ -1,68 +1,74 @@
 import React from "react";
 import Link from "next/link";
-import Dropdown from "react-bootstrap/Dropdown";
+import Dropdown from "react-bootstrap/NavDropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
+import Navbar from "react-bootstrap/Navbar"
+import Container from "react-bootstrap/Container";
+import { Form, Offcanvas } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
+import { NavDropdown } from "react-bootstrap";
+import { FormControl } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+
 
 class NavBar extends React.Component{
-    render(){
-        return(
-            <nav>
-                <ul className="navGrid">
-                    <li className="home">
-                        <Link className="navButton" href="/">
-                            <a>Home</a>
-                        </Link>
-                    </li>
-                    <li className="heroes">
-                        <DropdownButton id="dropdown-basic-button" title="Heroes" bsPrefix="navButton">
-                            <Dropdown.Item bsPrefix="ddItem" href="/heroes/quincy">Quincy</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/heroes/gwendolin">Gwen</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/heroes/obyn">Obyn</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/heroes/strikerjones">Striker</Dropdown.Item>
-                        </DropdownButton>
-                    </li>
-                    <li className="primary">
-                        <DropdownButton id="dropdown-basic-button" title="Primary" bsPrefix="navButton">
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/primary/dart">Dart</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/primary/bombshooter">Bomb</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/primary/boomerang">Boomer</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/primary/gluegunner">Glue</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/primary/ice">Ice</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/primary/tackshooter">Tack</Dropdown.Item>
-                        </DropdownButton>
-                    </li>
-                    <li className="military">
-                        <DropdownButton id="dropdown-basic-button" title="Military" bsPrefix="navButton">
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/military/ace">Ace</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/military/buccaneer">Ship</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/military/dartlinggunner">Dartling</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/military/helipilot">Heli</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/military/mortar">Mortar</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/military/sniper">Sniper</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/military/sub">Sub</Dropdown.Item>
-                        </DropdownButton>
-                    </li>
-                    <li className="magic">
-                        <DropdownButton id="dropdown-basic-button" title="Magic" bsPrefix="navButton">
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/magic/alchemist">Alchemist</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/magic/druid">Druid</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/magic/ninja">Ninja</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/magic/super">Super</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/magic/wizard">Wizard</Dropdown.Item>
-                        </DropdownButton>
-                    </li>
-                    <li className="support">
-                        <DropdownButton id="dropdown-basic-button" title="Support" bsPrefix="navButton">
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/support/bananafarm">Farm</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/support/engineer">Engineer</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/support/spikefactory">Spike Factory</Dropdown.Item>
-                            <Dropdown.Item bsPrefix="ddItem" href="/monkeys/support/village">Village</Dropdown.Item> 
-                        </DropdownButton>
-                    </li>
-                    
-                </ul>
-
-            </nav>
+    render() {
+        return (
+            <Navbar expand={false}>
+                <Container fluid>
+                    <Navbar.Brand className="navbar-text"href="#">BTD Battles 2 Randomizer</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="offcanvasNavbar" />
+                    <Navbar.Offcanvas
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                        placement="top"
+                    >
+                        <Offcanvas.Header closeButton>
+                            <Offcanvas.Title id="offcanvasNavbarLabel">BTD Battles 2 Randomizer</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body bg="dark">
+                            <Nav className="justify-content-end flex-grow-1 pe-3">
+                                <Nav.Link href="/">Home</Nav.Link>
+                                <Nav.Link href="/vip">Vip Calculator</Nav.Link>
+                                <NavDropdown className="navMenu" title="Heroes" id="offcanvasNavbarDropdown">
+                                    <NavDropdown.Item className="navButton" href="/heroes/quincy">Quincy</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/heroes/gwendolin">Gwen</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/heroes/obyn">Obyn</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" ref="/heroes/strikerjones">Striker</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown className="navMenu" title="Primary" id="offcanvasNavbarDropdown">
+                                    <NavDropdown.Item className="navButton" href="/heroes/quincy">Quincy</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/heroes/gwendolin">Gwen</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/heroes/obyn">Obyn</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/heroes/strikerjones">Striker</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown className="navMenu" title="Military" id="offcanvasNavbarDropdown">
+                                    <NavDropdown.Item className="navButton" href="/monkeys/military/ace">Ace</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/military/buccaneer">Ship</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/military/dartlinggunner">Dartling</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/military/helipilot">Heli</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/military/mortar">Mortar</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/military/sniper">Sniper</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/military/sub">Sub</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown className="navMenu" title="Magic" id="offcanvasNavbarDropdown">
+                                    <NavDropdown.Item className="navButton" href="/monkeys/magic/alchemist">Alchemist</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/magic/druid">Druid</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/magic/ninja">Ninja</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/magic/super">Super</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/magic/wizard">Wizard</NavDropdown.Item>
+                                </NavDropdown>
+                                <NavDropdown className="navMenu" title="Support" id="offcanvasNavbarDropdown">
+                                    <NavDropdown.Item className="navButton" href="/monkeys/support/bananafarm">Farm</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/support/engineer">Engineer</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/support/spikefactory">Spike Factory</NavDropdown.Item>
+                                    <NavDropdown.Item className="navButton" href="/monkeys/support/village">Village</NavDropdown.Item>
+                                </NavDropdown>
+                            </Nav>
+                        </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                </Container>
+            </Navbar>
         )
     }
 
