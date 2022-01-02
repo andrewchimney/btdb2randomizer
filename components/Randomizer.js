@@ -123,7 +123,7 @@ class Randomizer extends React.Component{
     DisplayHero(){
         switch(this.state.heroKey){
             case 0:
-                return <Image src="/images/hidden/heroes/QuincyPortraitHidden.png" alt="Hidden Quincy" width={this.state.imageSize} height={this.state.imageSize} priority={true}/>;
+                return <Image className="hidden"src="/images/hidden/heroes/QuincyPortraitHidden.png" alt="Hidden Quincy" width={this.state.imageSize} height={this.state.imageSize} priority={true}/>;
             case 1:
                 return <Link href="/heroes/quincy"><a><Image src='/images/heroes/QuincyPortrait.webp' alt='Quincy' width={this.state.imageSize} height={this.state.imageSize} priority={true}/> </a></Link>;
             case 2: 
@@ -321,7 +321,7 @@ class Randomizer extends React.Component{
                                                 <Image className="bp3" id="t4" src='/images/monkeys/BombShooter.webp' alt='Bomb Bhooter' width="100%" height="100%" priority={true} />
                                             </Button>
                                             <Button className="bp4 shadow-none" onClick={() => this.excludeTower(20)}>
-                                                <Image className="bp4" id="t20" src='/images/monkeys/Tackshooter.webp' alt='Tackshooter' width="100%" height="100%" priority={true} />
+                                                <Image className="bp4" id="t20" src='/images/monkeys/TackShooter.webp' alt='Tackshooter' width="100%" height="100%" priority={true} />
                                             </Button>
                                             <Button className="bp5 shadow-none" onClick={() => this.excludeTower(13)}>
                                                 <Image className="bp5" id="t13" src='/images/monkeys/Ice.webp' alt='Ice Monkey' width="100%" height="100%" priority={true} />

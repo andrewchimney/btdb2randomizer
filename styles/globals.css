@@ -32,7 +32,8 @@
 }
 
 /*general*/
-
+.hidden{
+}
 body{
   background-color: var(--smoky-black);
   text-align: center;
