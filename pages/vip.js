@@ -235,7 +235,7 @@ class vip extends React.Component{
 
             <header>
                 <h1>Is VIP pass worth it for extra experience?</h1>
-                <p>Bloons Tower defense Battles 2, released 2021, is the successor to Bloons Tower Battles 1, realeased in 2012. BTD Battles 2 brings many improvements to the original game such as heroes, new towers, additional upgrade paths, and more. However, the time to unlock all of these upgrades is rather lengthy. This post will help you answer the question of "Is VIP pass worth it for extra exp?"</p>
+                <p>Bloons Tower defense Battles 2, released 2021, is the successor to Bloons Tower Battles 1, released in 2012. BTD Battles 2 brings many improvements to the original game such as heroes, new towers, additional upgrade paths, and more. However, the time to unlock all of these upgrades is rather lengthy. This post will help you answer the question of &quot;Is VIP pass worth it for extra exp?&quote;</p>
             </header>
             <main>
                 <h2>
@@ -285,19 +285,19 @@ class vip extends React.Component{
                     </p>
                     <ul>
                         <li>
-                            3 tier 3's: 
+                            3 tier 3&apos;s: 
                         </li>
                         <li>
                             3 * 2,000 = 6,000 XP
                         </li>
                         <li>
-                            3 tier 4's:
+                            3 tier 4&apos;s:
                         </li>
                     <li>
                         3 * 10,000 XP = 30,000 XP
                     </li>
                     <li>
-                        3 tier 5's:
+                        3 tier 5&apos;s:
                     </li>
                     <li>
                         3* 35,000 XP = 105,000 XP
