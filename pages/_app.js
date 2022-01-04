@@ -4,6 +4,7 @@ import SSRProvider from 'react-bootstrap/SSRProvider';
 import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
+import '../styles/vip.css'
 
 function MyApp({ Component, pageProps }) {
   return(

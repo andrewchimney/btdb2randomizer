@@ -369,13 +369,13 @@ class vip extends React.Component{
                 </p>
                 <Form>
                     <Form.Group>
-                        <Form.Control as="select" onChange={() => this.setState({ gameLength: event.target.value })}>
-                            <option>Short</option>
-                            <option>Medium</option>
-                            <option>Long</option>
+                        <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ gameLength: event.target.value })}>
+                            <option >Short</option>
+                            <option >Medium</option>
+                            <option >Long</option>
                         </Form.Control>
-                        <Form.Control as="select" onChange={() => this.setState({ arena: event.target.value })}>
-                            <option>Red Bloon Camp</option>
+                        <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ arena: event.target.value })}>
+                            <option >Red Bloon Camp</option>
                             <option>Yellow Stadium</option>
                             <option>White Wasteland</option>
                             <option>Lead Dungeon</option>
@@ -398,12 +398,12 @@ class vip extends React.Component{
                 <p>22 Monkeys * 141000 XP = 3,102,000 XP</p>
                 <Form>
                     <Form.Group>
-                        <Form.Control as="select" onChange={() => this.setState({ gameLength2: event.target.value })}>
+                        <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ gameLength2: event.target.value })}>
                             <option>Short</option>
                             <option>Medium</option>
                             <option>Long</option>
                         </Form.Control>
-                        <Form.Control as="select" onChange={() => this.setState({ arena2: event.target.value })}>
+                        <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ arena2: event.target.value })}>
                             <option>Red Bloon Camp</option>
                             <option>Yellow Stadium</option>
                             <option>White Wasteland</option>
@@ -427,12 +427,12 @@ class vip extends React.Component{
             </main>
             <Form>
                 <Form.Group>
-                    <Form.Control as="select" onChange={() => this.setState({ gameLength3: event.target.value })}>
-                        <option>Short</option>
+                    <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ gameLength3: event.target.value })}>
+                        <option >Short</option>
                         <option>Medium</option>
                         <option>Long</option>
                     </Form.Control>
-                    <Form.Control as="select" onChange={() => this.setState({ arena3: event.target.value })}>
+                    <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ arena3: event.target.value })}>
                         <option>Red Bloon Camp</option>
                         <option>Yellow Stadium</option>
                         <option>White Wasteland</option>
@@ -454,15 +454,15 @@ class vip extends React.Component{
             <h2>Full Calculator</h2>
             <Form>
                 <Form.Group>
-                    <Form.Control type="text" onChange={() => this.setState({monkeys: event.target.value})} value={this.state.monkeys} placeholder="Number of monkeys to unlock">
+                    <Form.Control className="shadow-none" type="text" onChange={() => this.setState({monkeys: event.target.value})} value={this.state.monkeys} placeholder="Number of monkeys to unlock">
 
                     </Form.Control>
-                    <Form.Control as="select" onChange={() => this.setState({ gameLength4: event.target.value })}>
+                    <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ gameLength4: event.target.value })}>
                         <option>Short</option>
                         <option>Medium</option>
                         <option>Long</option>
                     </Form.Control>
-                    <Form.Control as="select" onChange={() => this.setState({ arena4: event.target.value })}>
+                    <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ arena4: event.target.value })}>
                         <option>Red Bloon Camp</option>
                         <option>Yellow Stadium</option>
                         <option>White Wasteland</option>
@@ -473,7 +473,7 @@ class vip extends React.Component{
                         <option>ZOMG Superdome</option>
                         <option>Hall Of Masters</option>
                     </Form.Control>
-                    <Form.Control as="select" onChange={() => this.setState({ vip: event.target.value })}>
+                    <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ vip: event.target.value })}>
                         <option value={"t"}>With VIP</option>
                         <option value={"f"}>Without VIP</option>
                     </Form.Control>

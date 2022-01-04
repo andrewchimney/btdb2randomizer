@@ -1,0 +1,49 @@
+:root{
+    --charcoal: rgb(44, 47, 53);
+    --dark-blue: rgb(6, 22, 35);
+    --peach-puff: #ebcfb2ff;
+    --navajo-lightgrey: #ffdda1ff;
+    --maize-crayola: #ffd151ff;
+    --saffron: #f8c537ff;
+    --maximum-yellow-red: #edb230ff;
+    --princeton-orange: #e77728ff;
+    --smoky-black: #12130fff;
+    --illuminating-emerald: #5b9279ff;
+    --illuminating-emerald-dark: rgb(73, 117, 97);
+    --eton-blue: #8fcb9bff;
+    --platinum: #eae6e5ff;
+    --middle-grey: #8f8073ff;
+  
+}
+@font-face {
+    font-family: "Oetztype";
+    src: 
+    url("/fonts/Oetztype/Oetztype.woff2") format("woff2"), /* chrome、firefox */
+    url("/fonts/Oetztype/Oetztype.woff") format("woff"), /* chrome、firefox */
+    url("/fonts/Oetztype/Oetztype.ttf") format("truetype"),
+    url("/fonts/Oetztype/Oetztype.svg#Oetztype") format("svg"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+h2{
+    color: var(--illuminating-emerald);
+}
+h3{
+    color: var(--illuminating-emerald);
+}
+ul{
+    color: var(--illuminating-emerald);}
+.form-control, .form-control::after, .form-control:visited, .form-control:focus{
+    font-family:  "Oetztype";
+    max-width: 500px;
+    width: 100vw;
+    text-align: center;
+    color: var(--illuminating-emerald);
+    margin: auto;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+}
+input{
+    color: var(--illuminating-emerald);
+}
