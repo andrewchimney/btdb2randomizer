@@ -31,6 +31,9 @@ header{
     max-width: 700px;
     margin: auto;
 }
+h3{
+    font-size: 24px;
+}
 h2{
     color: var(--illuminating-emerald);
 }
@@ -135,7 +138,7 @@ ul{
 .form-control, .form-control::after, .form-control:visited, .form-control:focus{
     font-family:  "Oetztype";
     max-width: 500px;
-    width: 100vw;
+    width: 90vw;
     text-align: center;
     color: var(--illuminating-emerald);
     margin: auto;

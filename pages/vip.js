@@ -249,13 +249,16 @@ class vip extends React.Component{
                 <p>
                     In BTD battles 2, the experience per tier varies from path to path and from monkey to monkey. Every tower starts with 150 XP Experience points are tower specific and cannot be shared. The average experience cost per tier is about:
                 </p>
-                    <ul className="t5">
-                        <li className="t51">
-                            Tier 1:
-                        </li>
-                        <li className="t52">
-                            unlocked by default (as of patch 1.0.2)
-                        </li>
+                <p>
+                <a href="#fullCalculator"> Skip to full calculator</a>
+                </p>
+                <ul className="t5">
+                    <li className="t51">
+                        Tier 1:
+                    </li>
+                    <li className="t52">
+                        unlocked by default (as of patch 1.0.2)
+                    </li>
                         <li className="t53">
                             Tier 2:
                         </li>
@@ -315,7 +318,7 @@ class vip extends React.Component{
                     </li>
                 </ul>
                 <h2>Well how long would it take me to earn this much XP?</h2>
-                <h3>XP stats:</h3>
+                <h3>XP is rewarded based on game length and outcome:</h3>
                 <ul>
                     <li>
                         For early game losses ~200 tower XP is awarded
@@ -336,10 +339,8 @@ class vip extends React.Component{
                         For late game wins ~1500 tower XP is awarded
                     </li>
                 </ul>
+                <h3>Additionally an XP boost is granted on the arena level:</h3>
                 <ul>
-                    <li>
-                        Additionally an XP boost is granted on the arena level:
-                    </li>
                     <li>
                         Red Bloon Camp: 0%
                     </li>
@@ -453,7 +454,7 @@ class vip extends React.Component{
                 <this.calcGamesThree />
                 <p>games to unlock all 22 monkeys with VIP (assumed win loss rate is 50%)</p>
             </div>
-            <h2>Full Calculator</h2>
+            <h2 id="fullCalculator">Full Calculator</h2>
             <Form>
                 <Form.Group>
                     <Form.Control className="shadow-none" type="text" onChange={() => this.textInput(event.target.value)} value={this.state.monkeys} placeholder="Number of monkeys to unlock">
