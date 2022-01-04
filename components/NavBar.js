@@ -16,7 +16,7 @@ class NavBar extends React.Component{
         return (
             <Navbar expand={false}>
                 <Container fluid>
-                    <Navbar.Brand className="navbar-text"href="#">BTD Battles 2 Randomizer</Navbar.Brand>
+                    <Navbar.Brand className="navbar-text"href="/">BTD Battles 2 Randomizer</Navbar.Brand>
                     <Navbar.Toggle aria-controls="offcanvasNavbar" />
                     <Navbar.Offcanvas
                         id="offcanvasNavbar"
