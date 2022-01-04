@@ -23,7 +23,14 @@
     url("/fonts/Oetztype/Oetztype.ttf") format("truetype"),
     url("/fonts/Oetztype/Oetztype.svg#Oetztype") format("svg"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
-
+main{
+    max-width: 700px;
+    margin: auto;
+}
+header{
+    max-width: 700px;
+    margin: auto;
+}
 h2{
     color: var(--illuminating-emerald);
 }
@@ -31,7 +38,100 @@ h3{
     color: var(--illuminating-emerald);
 }
 ul{
-    color: var(--illuminating-emerald);}
+    color: var(--illuminating-emerald);
+    list-style-type: none;
+}
+.t5{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.t51{
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 1 / 2;
+}
+.t52{
+    text-align: left;
+    grid-template-columns: 2 / 3;
+    grid-template-rows: 1 /2 ;
+}
+.t53{
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 2 / 3 ;
+}
+.t54{
+    text-align: left;
+    grid-template-columns: 2 /3;
+    grid-template-rows: 2 / 3;
+}
+.t55{
+    grid-template-columns: 1 /2;
+    grid-template-rows: 3 / 4;
+}
+.t56{
+    text-align: left;
+    grid-template-columns:  2 / 3;
+    grid-template-rows: 3 /4;
+}
+.t57{
+    grid-template-columns: 1 /2;
+    grid-template-rows: 4 /5;
+}
+.t58{
+    text-align: left;
+    grid-template-columns: 2 /3;
+    grid-template-rows: 4 /5;
+}
+.t59{
+    grid-template-columns: 1 /2;
+    grid-template-rows: 5 /6;
+}
+.t510{
+    text-align: left;
+    grid-template-columns: 2/ 3;
+    grid-template-rows: 5 /6;
+}
+.t3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.t31{
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 1/ 2;
+}
+.t32{
+    text-align: left;
+    grid-template-columns: 2 / 3;
+    grid-template-rows: 1/ 2;
+}
+.t33{
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 2 / 3;
+}
+.t34{
+    text-align: left;
+    grid-template-columns: 2 / 3;
+    grid-template-rows: 2 / 3;
+}
+.t35{
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 3 / 4;
+}
+.t36{
+    text-align: left;
+    grid-template-columns: 2 / 3;
+    grid-template-rows: 3 / 4;
+}
+.t37{
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 4 / 5;
+}
+.t38{
+    text-align: left;
+    grid-template-columns: 2 / 3;
+    grid-template-rows: 4 / 5;
+}
 .form-control, .form-control::after, .form-control:visited, .form-control:focus{
     font-family:  "Oetztype";
     max-width: 500px;

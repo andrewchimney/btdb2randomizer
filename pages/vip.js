@@ -69,7 +69,7 @@ class vip extends React.Component{
                 break;
         }
         return (
-            <p>{Math.round(141000/(avgExp*multi))}</p>
+            <h3>{Math.round(141000/(avgExp*multi))}</h3>
         )
     }
     calcGamesTwentyTwo(){
@@ -116,7 +116,7 @@ class vip extends React.Component{
                 break;
         }
         return (
-            <p>{Math.round(3102000/(avgExp*multi))}</p>
+            <h3>{Math.round(3102000/(avgExp*multi))}</h3>
         )
     }
     calcGamesThree(){
@@ -163,7 +163,7 @@ class vip extends React.Component{
                 break;
         }
         return (
-            <p>{Math.round(3102000/(avgExp*multi*3))}</p>
+            <h3>{Math.round(3102000/(avgExp*multi*3))}</h3>
         )
 
     }
@@ -211,23 +211,28 @@ class vip extends React.Component{
                 break;
         }
         if (this.state.vip==="t") {
-            return <p>{Math.round(141000 * this.state.monkeys / (avgExp * multi * 3))}</p>
+            return <h3>{Math.round(141000 * this.state.monkeys / (avgExp * multi * 3))}</h3>
         } else {
-            return <p>{Math.round(141000 * this.state.monkeys / (avgExp * multi))}</p>
+            return <h3>{Math.round(141000 * this.state.monkeys / (avgExp * multi))}</h3>
         }
 
     }
     rvip(){
-        console.log(this.state.vip)
-        console.log(this.state.vip==="t")
         if(this.state.vip==="t"){
-            console.log("with")
             return <>with</>
         } else{
-            console.log("without")
             return <>without</>
         }
 
+    }
+    textInput(text){
+        if(text>22){
+            text=22;
+        }
+        if(text<0){
+            text=0
+        }
+        this.setState({monkeys: text});
     }
     render(){
 
@@ -235,7 +240,7 @@ class vip extends React.Component{
 
             <header>
                 <h1>Is VIP pass worth it for extra experience?</h1>
-                <p>Bloons Tower defense Battles 2, released 2021, is the successor to Bloons Tower Battles 1, released in 2012. BTD Battles 2 brings many improvements to the original game such as heroes, new towers, additional upgrade paths, and more. However, the time to unlock all of these upgrades is rather lengthy. This post will help you answer the question of &quot;Is VIP pass worth it for extra exp?&quote;</p>
+                <p>Bloons Tower defense Battles 2, released 2021, is the successor to Bloons Tower Battles 1, released in 2012. BTD Battles 2 brings many improvements to the original game such as heroes, new towers, additional upgrade paths, and more. However, the time to unlock all of these upgrades is rather lengthy. This post will help you answer the question of &quot;Is VIP pass worth it for extra XP?&quot;</p>
             </header>
             <main>
                 <h2>
@@ -244,35 +249,35 @@ class vip extends React.Component{
                 <p>
                     In BTD battles 2, the experience per tier varies from path to path and from monkey to monkey. Every tower starts with 150 XP Experience points are tower specific and cannot be shared. The average experience cost per tier is about:
                 </p>
-                    <ul>
-                        <li>
+                    <ul className="t5">
+                        <li className="t51">
                             Tier 1:
                         </li>
-                        <li>
-                            unlocked by default(as of patch 1.0.2)
+                        <li className="t52">
+                            unlocked by default (as of patch 1.0.2)
                         </li>
-                        <li>
+                        <li className="t53">
                             Tier 2:
                         </li>
-                        <li>
-                            unlocked by default(as of path 1.0.2)
+                        <li className="t54">
+                            unlocked by default (as of path 1.0.2)
                         </li>
-                        <li>
+                        <li className="t55">
                             Tier 3:
                         </li>
-                        <li>
+                        <li className="t56">
                             ~2000 XP
                         </li>
-                        <li>
+                        <li className="t57">
                             Tier 4:
                         </li>
-                        <li>
+                        <li className="t58">
                             ~10,000 XP
                         </li>
-                        <li>
+                        <li className="t59">
                             Tier 5:
                         </li>
-                        <li>
+                        <li className="t510">
                             ~35,000 XP
                         </li>
                     </ul>
@@ -282,30 +287,30 @@ class vip extends React.Component{
                 </h2>
                 <p>
                     In BTD battles 2, each monkey has 3 paths with 5 tiers each. This means that every monkey will have:
-                    </p>
-                    <ul>
-                        <li>
-                            3 tier 3&apos;s: 
-                        </li>
-                        <li>
-                            3 * 2,000 = 6,000 XP
-                        </li>
-                        <li>
-                            3 tier 4&apos;s:
-                        </li>
-                    <li>
+                </p>
+                <ul className="t3">
+                    <li className="t31">
+                        3 tier 3&apos;s:
+                    </li>
+                    <li className="t32">
+                        3 * 2,000 = 6,000 XP
+                    </li>
+                    <li className="t33">
+                        3 tier 4&apos;s:
+                    </li>
+                    <li className="t34">
                         3 * 10,000 XP = 30,000 XP
                     </li>
-                    <li>
+                    <li className="t35">
                         3 tier 5&apos;s:
                     </li>
-                    <li>
+                    <li className="t36">
                         3* 35,000 XP = 105,000 XP
                     </li>
-                    <li>
+                    <li className="t37">
                         total:
                     </li>
-                    <li>
+                    <li className="t38">
                         ~141,000 XP
                     </li>
                 </ul>
@@ -322,10 +327,10 @@ class vip extends React.Component{
                         For mid game losses ~500 tower XP is awarded
                     </li>
                     <li>
-                        For mid game wins ~1000 tower xp is awarded
+                        For mid game wins ~1000 tower XP is awarded
                     </li>
                     <li>
-                        For Late game wins ~750 tower xp in awarded
+                        For late game wins ~750 tower XP in awarded
                     </li>
                     <li>
                         For late game wins ~1500 tower XP is awarded
@@ -390,11 +395,10 @@ class vip extends React.Component{
                 <div>
                     <p>It would take you:</p>
                     <this.calcGamesOne />
-                    <p>games to unlock one entire monkey</p>
-                    <p>(assumed win loss rate is 50% and that only one tower is used the entire game to mitigate XP splitting)</p>
+                    <p>games to unlock one entire monkey (assumed win loss rate is 50% and that only one tower is used the entire game to mitigate XP splitting)</p>
                 </div>
                 <h2>How many games for all of the monkeys?</h2>
-                <h3>In BTD Battles 2, there are 22 monkeys total</h3>
+                <p>In BTD Battles 2, there are 22 monkeys total</p>
                 <p>22 Monkeys * 141000 XP = 3,102,000 XP</p>
                 <Form>
                     <Form.Group>
@@ -419,11 +423,10 @@ class vip extends React.Component{
                 <div>
                     <p>It would take you:</p>
                     <this.calcGamesTwentyTwo />
-                    <p>games to unlock all 22 monkeys</p>
-                    <p>(assumed win loss rate is 50%)</p>
+                    <p>games to unlock all 22 monkeys (assumed win loss rate is 50%)</p>
                 </div>
                 <h2>Well what about VIP?</h2>
-                <p>The VIP pass triples the amount of tower XP earned, among other benefits.</p>
+                <p>The VIP pass triples the amount of tower XP earned, as well as battle points and monkey money. Battle points can be used to unlock chests which give additional XP. The VIP pass can be purchased for 30 days for $4.99 or 90 days for $11.99.</p>
             </main>
             <Form>
                 <Form.Group>
@@ -448,13 +451,12 @@ class vip extends React.Component{
             <div>
                 <p>It would take you:</p>
                 <this.calcGamesThree />
-                <p>games to unlock all 22 monkeys with VIP</p>
-                <p>(assumed win loss rate is 50%)</p>
+                <p>games to unlock all 22 monkeys with VIP (assumed win loss rate is 50%)</p>
             </div>
             <h2>Full Calculator</h2>
             <Form>
                 <Form.Group>
-                    <Form.Control className="shadow-none" type="text" onChange={() => this.setState({monkeys: event.target.value})} value={this.state.monkeys} placeholder="Number of monkeys to unlock">
+                    <Form.Control className="shadow-none" type="text" onChange={() => this.textInput(event.target.value)} value={this.state.monkeys} placeholder="Number of monkeys to unlock">
 
                     </Form.Control>
                     <Form.Control className="shadow-none" as="select" onChange={() => this.setState({ gameLength4: event.target.value })}>
@@ -482,8 +484,7 @@ class vip extends React.Component{
             <div>
                 <p>It would take you:</p>
                 <this.calcGamesFour/>
-                <p>games to unlock {this.state.monkeys} monkeys <this.rvip/> VIP</p>
-                <p>(assumed win loss rate is 50%)</p>
+                <p>games to unlock {this.state.monkeys} monkeys <this.rvip/> VIP (assumed win loss rate is 50%)</p>
             </div>
 
         </>
