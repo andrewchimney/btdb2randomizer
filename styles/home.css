@@ -14,3 +14,7 @@
 .home .card-body{
     background-color: rgb(50,50,50);
 }
+.home a{
+    text-decoration: none;
+    color: rgb(210,210,210);
+}

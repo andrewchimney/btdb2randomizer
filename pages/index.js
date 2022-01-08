@@ -15,7 +15,7 @@ export default function Home() {
               <Card.Body>
                 <Card.Title>BTD Battles 2 Randomizer</Card.Title>
                 <Card.Text>Generate random heroes towers or both</Card.Text>
-                <Button>View</Button>
+                <Button><a href="btdb2randomizer">View</a></Button>
               </Card.Body>
             </Card>
           </Link>
@@ -27,7 +27,7 @@ export default function Home() {
               <Card.Body>
                 <Card.Title>BTD Battles 2 VIP Calculator</Card.Title>
                 <Card.Text>Calculate the amount of games needed to unlock a monkey</Card.Text>
-                <Button>View</Button>
+                <Button><a href="btdb2vip">View</a></Button>
               </Card.Body>
             </Card>
           </Link>
