@@ -13,6 +13,7 @@
     --eton-blue: #8fcb9bff;
     --platinum: #eae6e5ff;
     --middle-grey: #8f8073ff;
+    --light-grey: rgb(210,210,210);
   
 }
 @font-face {
@@ -23,130 +24,139 @@
     url("/fonts/Oetztype/Oetztype.ttf") format("truetype"),
     url("/fonts/Oetztype/Oetztype.svg#Oetztype") format("svg"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
-main{
+.vip{
+    padding-top: 20px;
+    color: var(--light-grey);
+}
+.vip main{
     max-width: 700px;
     margin: auto;
 }
-header{
+.vip header{
     max-width: 700px;
     margin: auto;
 }
-h3{
+.vip h3{
     font-size: 24px;
 }
-h2{
-    color: var(--illuminating-emerald);
+.vip h2{
+    color: var(--light-grey);
 }
-h3{
-    color: var(--illuminating-emerald);
+.vip h3{
+    color: var(--light-grey);
 }
-ul{
-    color: var(--illuminating-emerald);
+.vip ul{
+    color: var(--light-grey);
     list-style-type: none;
 }
-.t5{
+.vip .t5{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
-.t51{
+.vip .t51{
     grid-template-columns: 1 / 2;
     grid-template-rows: 1 / 2;
 }
-.t52{
+.vip .t52{
     text-align: left;
     grid-template-columns: 2 / 3;
     grid-template-rows: 1 /2 ;
 }
-.t53{
+.vip .t53{
     grid-template-columns: 1 / 2;
     grid-template-rows: 2 / 3 ;
 }
-.t54{
+.vip .t54{
     text-align: left;
     grid-template-columns: 2 /3;
     grid-template-rows: 2 / 3;
 }
-.t55{
+.vip .t55{
     grid-template-columns: 1 /2;
     grid-template-rows: 3 / 4;
 }
-.t56{
+.vip .t56{
     text-align: left;
     grid-template-columns:  2 / 3;
     grid-template-rows: 3 /4;
 }
-.t57{
+.vip .t57{
     grid-template-columns: 1 /2;
     grid-template-rows: 4 /5;
 }
-.t58{
+.vip .t58{
     text-align: left;
     grid-template-columns: 2 /3;
     grid-template-rows: 4 /5;
 }
-.t59{
+.vip .t59{
     grid-template-columns: 1 /2;
     grid-template-rows: 5 /6;
 }
-.t510{
+.vip .t510{
     text-align: left;
     grid-template-columns: 2/ 3;
     grid-template-rows: 5 /6;
 }
-.t3{
+.vip .t3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
-.t31{
+.vip .t31{
     grid-template-columns: 1 / 2;
     grid-template-rows: 1/ 2;
 }
-.t32{
+.vip .t32{
     text-align: left;
     grid-template-columns: 2 / 3;
     grid-template-rows: 1/ 2;
 }
-.t33{
+.vip .t33{
     grid-template-columns: 1 / 2;
     grid-template-rows: 2 / 3;
 }
-.t34{
+.vip .t34{
     text-align: left;
     grid-template-columns: 2 / 3;
     grid-template-rows: 2 / 3;
 }
-.t35{
+.vip .t35{
     grid-template-columns: 1 / 2;
     grid-template-rows: 3 / 4;
 }
-.t36{
+.vip .t36{
     text-align: left;
     grid-template-columns: 2 / 3;
     grid-template-rows: 3 / 4;
 }
-.t37{
+.vip .t37{
     grid-template-columns: 1 / 2;
     grid-template-rows: 4 / 5;
 }
-.t38{
+.vip .t38{
     text-align: left;
     grid-template-columns: 2 / 3;
     grid-template-rows: 4 / 5;
 }
-.form-control, .form-control::after, .form-control:visited, .form-control:focus{
+.vip .form-control, .vip .form-control::after, .vip .form-control:visited, .vip .form-control:focus{
     font-family:  "Oetztype";
     max-width: 500px;
     width: 90vw;
     text-align: center;
-    color: var(--illuminating-emerald);
+    color: var(--light-grey);
     margin: auto;
     text-align-last: center;
     text-align: center;
     -ms-text-align-last: center;
     -moz-text-align-last: center;
+    background-color: var(--smoky-black);
 }
-input{
-    color: var(--illuminating-emerald);
+.vip input{
+    color: var(--light-grey);
+}
+.vip a{
+    padding-bottom: 10px;
+    text-decoration: none;
 }

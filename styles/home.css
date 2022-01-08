@@ -1,0 +1,16 @@
+.home{
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home .cards{
+    display: grid;
+    margin: auto;
+    grid-gap: 10vw;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    list-style-type: none;
+    padding-right:3vw;
+}
+.home .card-body{
+    background-color: rgb(50,50,50);
+}

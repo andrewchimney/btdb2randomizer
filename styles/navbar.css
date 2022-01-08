@@ -1,0 +1,86 @@
+.navbar{
+    background-color: var(--smoky-black);
+    border-bottom: solid;
+    border-color: var(--light-grey);
+  }
+.navbar-light .navbar-text{
+    color: var(--light-grey);
+  }
+.navbar-light .navbar-text:hover{
+    color: white;
+  }
+.navbar-light .navbar-text:visited{
+    color: var(--light-grey);
+    opacity: 1;
+  }
+.navbar-light .navbar-toggler-icon {
+    background-color: var(--light-grey);
+    border-radius: 4px;
+  }
+.navbar-light .navbar-toggler-icon:hover {
+    background-color: white;
+    border-radius: 4px;
+  }
+.navbar-light .navbar-toggler{
+    color: transparent;
+    border-color: transparent;
+  }
+  
+.navbar-toggler:focus{
+    box-shadow: none;
+  }
+.offcanvas-header{
+    background-color: var(--smoky-black);
+    border-bottom: solid;
+    border-color: var(--light-grey);
+  }
+.offcanvas-title{
+    color: var(--light-grey);
+  }
+.offcanvas-body{
+    background-color: var(--smoky-black);
+  }
+.btn-close{
+    background-color: var(--light-grey);
+    opacity: 1;
+  }
+.btn-close:active{
+    box-shadow: transparent;
+    border: 0px;
+    border-color: transparent;
+  }
+.offcanvas-top{
+    height: 100vh;
+  }
+.navButton{
+    color: var(--light-grey);
+  }
+.navMenu .dropdown-menu{
+    background-color: transparent;
+    text-align: center;
+    border: transparent;
+  
+  }
+.navButton:hover{
+    color: white;
+    background-color: transparent;
+  }
+.navButton:hover:visited{
+    color: white;
+    background-color: transparent;
+  }
+.nav-link{
+    color: var(--light-grey);
+  }
+.nav-link:hover{
+    color: white;
+  }
+.nav-link:active{
+    color: var(--light-grey);
+  }
+.nav-link:visited{
+    color: var(--light-grey);
+  }
+.nav-link:focus{
+    color: var(--light-grey);
+  }

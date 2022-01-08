@@ -16,7 +16,7 @@ class NavBar extends React.Component{
         return (
             <Navbar expand={false}>
                 <Container fluid>
-                    <Navbar.Brand className="navbar-text"href="/">BTD Battles 2 Randomizer</Navbar.Brand>
+                    <Navbar.Brand className="navbar-text"href="/">Home</Navbar.Brand>
                     <Navbar.Toggle aria-controls="offcanvasNavbar" />
                     <Navbar.Offcanvas
                         id="offcanvasNavbar"
@@ -24,12 +24,13 @@ class NavBar extends React.Component{
                         placement="top"
                     >
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id="offcanvasNavbarLabel">BTD Battles 2 Randomizer</Offcanvas.Title>
+                            <Offcanvas.Title id="offcanvasNavbarLabel">Home</Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body bg="dark">
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="/vip">Vip Calculator</Nav.Link>
+                                <Nav.Link href="/btdb2randomizer">Battles 2 Randomizer</Nav.Link>
+                                <Nav.Link href="/btdb2vip">Vip Calculator</Nav.Link>
                                 <NavDropdown className="navMenu shadow-none" title="Heroes" id="offcanvasNavbarDropdown">
                                     <NavDropdown.Item className="navButton" href="/heroes/quincy">Quincy</NavDropdown.Item>
                                     <NavDropdown.Item className="navButton" href="/heroes/gwendolin">Gwen</NavDropdown.Item>

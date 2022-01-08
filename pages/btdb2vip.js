@@ -226,6 +226,8 @@ class vip extends React.Component{
 
     }
     textInput(text){
+        
+        
         if(text>22){
             text=22;
         }
@@ -233,14 +235,16 @@ class vip extends React.Component{
             text=0
         }
         this.setState({monkeys: text});
+        
     }
     render(){
 
-        return (<>
+        return (<div className="vip">
 
             <header>
                 <h1>Is VIP pass worth it for extra experience?</h1>
                 <p>Bloons Tower defense Battles 2, released 2021, is the successor to Bloons Tower Battles 1, released in 2012. BTD Battles 2 brings many improvements to the original game such as heroes, new towers, additional upgrade paths, and more. However, the time to unlock all of these upgrades is rather lengthy. This post will help you answer the question of &quot;Is VIP pass worth it for extra XP?&quot;</p>
+                <a href="#fullCalculator"> Skip to full calculator</a>
             </header>
             <main>
                 <h2>
@@ -250,7 +254,6 @@ class vip extends React.Component{
                     In BTD battles 2, the experience per tier varies from path to path and from monkey to monkey. Every tower starts with 150 XP Experience points are tower specific and cannot be shared. The average experience cost per tier is about:
                 </p>
                 <p>
-                <a href="#fullCalculator"> Skip to full calculator</a>
                 </p>
                 <ul className="t5">
                     <li className="t51">
@@ -487,8 +490,7 @@ class vip extends React.Component{
                 <this.calcGamesFour/>
                 <p>games to unlock {this.state.monkeys} monkeys <this.rvip/> VIP (assumed win loss rate is 50%)</p>
             </div>
-
-        </>
+        </div>
         )
     }
 

@@ -1,42 +1,40 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
-import styles from '../styles/Home.module.css'
-import Randomizer from '../components/Randomizer'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Script from 'next/script'
+import { Card } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 export default function Home() {
   return (
-      <main>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-T35FEHWMFS"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <div className="home">
+      <ul className="cards">
+        <li>
+          <Link href="btdb2randomizer">
+            <Card>
+              <Card.Img src="images/randoscreen.png" />
+              <Card.Body>
+                <Card.Title>BTD Battles 2 Randomizer</Card.Title>
+                <Card.Text>Generate random heroes towers or both</Card.Text>
+                <Button>View</Button>
+              </Card.Body>
+            </Card>
+          </Link>
+        </li>
+        <li>
+          <Link href="btdb2vip">
+            <Card>
+              <Card.Img src="images/vipscreen.png" />
+              <Card.Body>
+                <Card.Title>BTD Battles 2 VIP Calculator</Card.Title>
+                <Card.Text>Calculate the amount of games needed to unlock a monkey</Card.Text>
+                <Button>View</Button>
+              </Card.Body>
+            </Card>
+          </Link>
+        </li>
 
-          gtag('config', 'G-T35FEHWMFS');
-        `}
-        </Script>
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1114753024999011"
-     crossorigin="anonymous" strategy="afterInteractive"></Script>
-      <section>
-        <header>
-          <h1>Bloons Tower Defense Battles 2 Randomizer</h1>
-        </header>
-          <p>
-            BTDB2 randomizer is a tool to generate random heroes, towers, or both for Bloons Tower Defense Battles 2. 
-            Click the generate hero button to generate a random hero, the generate tower button to generate a random tower, 
-            or the generate loadout button to generate both.
-          </p>
-      </section>
-      <section className="randomizer">
-        <Randomizer/>
-      </section>
-        </main>
+
+      </ul>
+    </div>
   )
 }
