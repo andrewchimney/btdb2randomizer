@@ -4,13 +4,21 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
-  <loc>https://btdb2randomizer.andrewchimney.com/</loc>
-  <lastmod>2021-12-31T23:50:46+00:00</lastmod>
+  <loc>https://andrewchimney.com/</loc>
+  <lastmod>2022-1-8</lastmod>
 </url>
+<url>
+  <loc>https://andrewchimney.com/btdb2randomizer</loc>
+  <lastmod>2022-1-8</lastmod>
+</url>
+<url>
+  <loc>https://andrewchimney.com/btdb2vip</loc>
+  <lastmod>2022-1-8</lastmod>
+</url>
+
 
 
 </urlset>
