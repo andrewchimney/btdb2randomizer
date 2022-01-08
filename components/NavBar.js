@@ -4,10 +4,11 @@ import Dropdown from "react-bootstrap/NavDropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Navbar from "react-bootstrap/Navbar"
 import Container from "react-bootstrap/Container";
-import { Form, Offcanvas } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import { NavDropdown } from "react-bootstrap";
-import { FormControl } from "react-bootstrap";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 
 

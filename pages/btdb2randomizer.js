@@ -7,7 +7,7 @@ import Modal from 'react-bootstrap/Modal';
 import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from "react-bootstrap/ButtonGroup"
-import { ModalBody } from 'react-bootstrap';
+import ModalBody from 'react-bootstrap/ModalBody';
 
 class btdb2randomizer extends React.Component {
     constructor(props) {
