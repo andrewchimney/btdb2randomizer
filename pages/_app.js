@@ -24,14 +24,17 @@ function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
-        <link rel="canonical" href="https://btdb2randomizer.andrewchimney.com"/>
+        <link rel="canonical" href="https://andrewchimney.com"/>
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@btdb2randomizer"/>
         <meta name="twitter:creator" content="@SarahMaslinNir" />
         <meta name="twitter:title" content="Randomizer" />
         <meta name="twitter:description" content="Bloons Tower Defense Battles 2 Randomizer." />
         <meta name="twitter:image" content="https://cdn.cloudflare.steamstatic.com/steam/apps/1276390/header.jpg?t=1638458113"></meta>
-        <Script
+      </Head>
+
+      <SSRProvider>
+      <Script
                     src="https://www.googletagmanager.com/gtag/js?id=G-T35FEHWMFS"
                     strategy="afterInteractive"
                 />
@@ -46,8 +49,6 @@ function MyApp({ Component, pageProps }) {
                 </Script>
                 <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1114753024999011"
                     crossorigin="anonymous" strategy="afterInteractive"></Script>
-      </Head>
-      <SSRProvider>
         <NavBar />
         <Component {...pageProps} />
       </SSRProvider>
